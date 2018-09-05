@@ -1,12 +1,1 @@
-{
-  "background_color": "#FFF",
-  "display": "standalone",
-  "name": "ViettelStudy",
-  "short_name": "ViettelStudy",
-  "version": "vn.vhv.app.viettelstudy",
-  "description": "Push sample application that receives push notifications.",
-  "author": "PhoneGap Team",
-  "icons": [],
-  "start_url": "index.html",
-  "theme_color": "#ee6e73"
-}
+{"background_color":"#FFF","display":"standalone","name":"ViettelStudy","short_name":"ViettelStudy","version":"vn.vhv.app.viettelstudy","description":"Push sample application that receives push notifications.","author":"PhoneGap Team","icons":[],"start_url":"index.html","theme_color":"#ee6e73","gcm_sender_id":"996231231186"}

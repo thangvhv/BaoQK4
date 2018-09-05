@@ -33,12 +33,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        console.log('Received Device Ready Event');
-        console.log('calling setup push');
+        alert('Received Device Ready Event');
+        alert('calling setup push');
         app.setupPush();
     },
     setupPush: function() {
         console.log('calling push init');
+		try{
         var push = PushNotification.init({
             "android": {
                 "senderID": "XXXXXXXX"
@@ -53,10 +54,11 @@ var app = {
             },
             "windows": {}
         });
-        console.log('after init');
-
+		
+        alert('after init');
+		
         push.on('registration', function(data) {
-            console.log('registration event: ' + data.registrationId);
+            alert('registration event: ' + data.registrationId);
             var oldRegId = localStorage.getItem('registrationId');
             if (oldRegId !== data.registrationId) {
                 // Save new registration ID
@@ -67,12 +69,12 @@ var app = {
         });
 
         push.on('error', function(e) {
-            console.log("push error = " + e.message);
+            alert("push error = " + e.message);
 			app.initFrame('');
         });
 
         push.on('notification', function(data) {
-            console.log('notification event');
+            alert('notification event');
 			app.win.executeScript({
 				code: 'VHV.alert('+JSON.stringify(data.message)+');'
 			});
@@ -84,6 +86,11 @@ var app = {
                 'Ok'                  // buttonName
             );
        });
+	   }
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
     },
 	initFrame: function(deviceId)
 	{

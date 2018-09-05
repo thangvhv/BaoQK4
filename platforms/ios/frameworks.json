@@ -1,4 +1,3 @@
 {
-    "AudioToolbox.framework": 1,
-    "PushKit.framework": 1
+    "AudioToolbox.framework": 1
 }

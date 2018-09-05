@@ -120,19 +120,8 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
         mChannel.setSound(android.provider.Settings.System.DEFAULT_NOTIFICATION_URI, audioAttributes);
       }
 
-      // If vibration settings is an array set vibration pattern, else set enable vibration.
-      JSONArray pattern = channel.optJSONArray(CHANNEL_VIBRATION);
-      if (pattern != null) {
-        int patternLength = pattern.length();
-        long[] patternArray = new long[patternLength];
-        for (int i = 0; i < patternLength; i++) {
-          patternArray[i] = pattern.optLong(i);
-        }
-        mChannel.setVibrationPattern(patternArray);
-      } else {
-        boolean vibrate = channel.optBoolean(CHANNEL_VIBRATION, true);
-        mChannel.enableVibration(vibrate);
-      }
+      //JSONArray pattern = channel.optJSONArray(CHANNEL_VIBRATION);
+      //mChannel.setVibrationPattern();
 
       notificationManager.createNotificationChannel(mChannel);
     }
@@ -140,25 +129,17 @@ public class PushPlugin extends CordovaPlugin implements PushConstants {
 
   @TargetApi(26)
   private void createDefaultNotificationChannelIfNeeded(JSONObject options) {
-    String id;
     // only call on Android O and above
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
       final NotificationManager notificationManager = (NotificationManager) cordova.getActivity()
           .getSystemService(Context.NOTIFICATION_SERVICE);
       List<NotificationChannel> channels = notificationManager.getNotificationChannels();
-      
-      for (int i=0; i<channels.size(); i++ ) {
-        id = channels.get(i).getId();
-        if (id.equals(DEFAULT_CHANNEL_ID)) {
-          return;
-        }
-      }
-      try {
-        options.put(CHANNEL_ID, DEFAULT_CHANNEL_ID);
-        options.putOpt(CHANNEL_DESCRIPTION, "PhoneGap PushPlugin");
-        createChannel(options);
-      } catch (JSONException e) {
-        Log.e(LOG_TAG, "execute: Got JSON Exception " + e.getMessage());
+      if (channels.size() == 0) {
+        NotificationChannel mChannel = new NotificationChannel(DEFAULT_CHANNEL_ID, "PhoneGap PushPlugin",
+            NotificationManager.IMPORTANCE_DEFAULT);
+        mChannel.enableVibration(options.optBoolean(VIBRATE, true));
+        mChannel.setShowBadge(true);
+        notificationManager.createNotificationChannel(mChannel);
       }
     }
   }

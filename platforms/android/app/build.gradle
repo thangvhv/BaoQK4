@@ -22,14 +22,14 @@ apply plugin: 'com.android.application'
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
         maven {
             url "https://maven.google.com"
         }
-        jcenter()
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.1'
+        classpath 'com.android.tools.build:gradle:3.0.0'
     }
 }
 
@@ -93,6 +93,7 @@ ext {
 // PLUGIN GRADLE EXTENSIONS START
 apply from: "../cordova-support-google-services/viettelstudy-build.gradle"
 apply from: "../phonegap-plugin-multidex/viettelstudy-multidex.gradle"
+apply from: "../phonegap-plugin-push/viettelstudy-push.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -261,7 +262,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
-    compile "com.android.support:support-v13:27.+"
+    compile "com.android.support:support-v13:26.+"
     compile "me.leolin:ShortcutBadger:1.1.17@aar"
     compile "com.google.firebase:firebase-messaging:11.6.2"
     // SUB-PROJECT DEPENDENCIES END

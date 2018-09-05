@@ -72,7 +72,7 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-inappbrowser": "3.0.0",
-    "phonegap-plugin-push": "2.2.3"
+    "phonegap-plugin-push": "2.1.3"
 }
 // BOTTOM OF METADATA
 });

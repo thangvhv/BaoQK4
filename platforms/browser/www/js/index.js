@@ -38,11 +38,13 @@ var app = {
         app.setupPush();
     },
     setupPush: function() {
-        console.log('calling push init');
+        //console.log('calling push init');
+		alert(window.PushNotification);
+		alert(window.PushNotification.init);
 		try{
         var push = PushNotification.init({
             "android": {
-                "senderID": "XXXXXXXX"
+                "senderID": "278576349838"
             },
             "browser": {
 				
@@ -54,7 +56,7 @@ var app = {
             },
             "windows": {}
         });
-		
+		alert(push);
         alert('after init');
 		
         push.on('registration', function(data) {

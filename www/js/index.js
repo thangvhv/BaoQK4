@@ -26,6 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+		app.initFrame();
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -57,18 +58,19 @@ var app = {
 		
         push.on('registration', function(data) {
             //alert('registration event: ' + data.registrationId);
+			
             var oldRegId = localStorage.getItem('registrationId');
             if (oldRegId !== data.registrationId) {
                 // Save new registration ID
                 localStorage.setItem('registrationId', data.registrationId);
                 // Post registrationId to your app server as the value has changed
             }
-			app.initFrame(data.registrationId);
+			app.setDeviceId(data.registrationId);
         });
 
         push.on('error', function(e) {
             //alert("push error = " + e.message);
-			app.initFrame('');
+			//app.initFrame('');
         });
 
         push.on('notification', function(data) {
@@ -90,9 +92,14 @@ var app = {
 			alert(e.getMessage());
 		}
     },
-	initFrame: function(deviceId)
+	initFrame: function()
 	{
-		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
-		this.win = window.open('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+		this.win = window.open('http://baoquankhu4.com.vn/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+	},
+	setDeviceId: function(deviceId)
+	{
+		app.win.executeScript({
+			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');VHV.alert(\'/?page=login&androidRegistrationId='+deviceId+'\');'
+		});
 	}
 };

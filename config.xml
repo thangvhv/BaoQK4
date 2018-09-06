@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.baoqk4" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy</name>
     <description>
-        Push sample application that receives push notifications.
+        Báo Quân Khu 4
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="contact@baoquankhu4.com.vn" href="http://baoquankhu4.com.vn">
+        Báo Quân Khu 4
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />

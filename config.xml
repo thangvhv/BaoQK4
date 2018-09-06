@@ -108,9 +108,9 @@
         <variable name="SENDER_ID" value="278576349838" />
     </plugin>
 	<edit-config target="NSAllowsArbitraryLoads" file="*-Info.plist" mode="merge">
-          <boolean>true</boolean>
+          <false/>
      </edit-config>
      <edit-config target="ITSAppUsesNonExemptEncryption" file="*-Info.plist" mode="merge">
-          <boolean>false</boolean>
+          <false/>
      </edit-config>
 </widget>

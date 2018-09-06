@@ -16,7 +16,6 @@
 		3047A5131AB8059700498E2A /* build-release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5101AB8059700498E2A /* build-release.xcconfig */; };
 		3047A5141AB8059700498E2A /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3047A5111AB8059700498E2A /* build.xcconfig */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		7CF3D0CD2385425BA5AF97D7 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = B24BCF9E2015444F9F47DBFD /* CDVLogger.m */; };
 		DB2646EC534D466E8CBB6BDD /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = BE957CE1962A4A6BB7B14C94 /* CDVNotification.m */; };
 		AC6D5EBE0A144F989CD28F2F /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F68AF72FD3AF452AAB5461B5 /* CDVNotification.bundle */; };
 		241D3C4116334B439FFCBC01 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FABDD55FEB74F0BA1195F99 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -64,8 +63,6 @@
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "ViettelStudy/config.xml"; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Bridging-Header.h"; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		B24BCF9E2015444F9F47DBFD /* CDVLogger.m */ = {isa = PBXFileReference; name = "CDVLogger.m"; path = "cordova-plugin-console/CDVLogger.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		56023240E4F94EA7ADDDBEA4 /* CDVLogger.h */ = {isa = PBXFileReference; name = "CDVLogger.h"; path = "cordova-plugin-console/CDVLogger.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		BE957CE1962A4A6BB7B14C94 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		D3D33E2F581C4985B7D0524D /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		F68AF72FD3AF452AAB5461B5 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
@@ -184,8 +181,6 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				B24BCF9E2015444F9F47DBFD /* CDVLogger.m */,
-				56023240E4F94EA7ADDDBEA4 /* CDVLogger.h */,
 				BE957CE1962A4A6BB7B14C94 /* CDVNotification.m */,
 				D3D33E2F581C4985B7D0524D /* CDVNotification.h */,
 				0B96D473BD2A4E8EB79409F9 /* CDVInAppBrowser.m */,
@@ -309,7 +304,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				7CF3D0CD2385425BA5AF97D7 /* CDVLogger.m in Sources */,
 				DB2646EC534D466E8CBB6BDD /* CDVNotification.m in Sources */,
 				5A3018E2B4464EA39AAB0CE3 /* CDVInAppBrowser.m in Sources */,
 				B3D2F8F5072E446A944D2073 /* CDVStatusBar.m in Sources */,

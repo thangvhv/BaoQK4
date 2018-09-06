@@ -78,9 +78,6 @@
     }
   },
   "installed_plugins": {
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     },
@@ -149,7 +146,6 @@
     }
   ],
   "plugin_metadata": {
-    "cordova-plugin-console": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
     "cordova-plugin-inappbrowser": "3.0.0",
     "cordova-plugin-statusbar": "2.1.3",

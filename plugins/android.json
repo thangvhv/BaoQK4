@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-console": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     },

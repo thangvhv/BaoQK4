@@ -33,14 +33,12 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        alert('Received Device Ready Event');
-        alert('calling setup push');
+        //alert('Received Device Ready Event');
+        //alert('calling setup push');
         app.setupPush();
     },
     setupPush: function() {
         //console.log('calling push init');
-		alert(window.PushNotification);
-		alert(window.PushNotification.init);
 		try{
         var push = PushNotification.init({
             "android": {
@@ -56,11 +54,9 @@ var app = {
             },
             "windows": {}
         });
-		alert(push);
-        alert('after init');
 		
         push.on('registration', function(data) {
-            alert('registration event: ' + data.registrationId);
+            //alert('registration event: ' + data.registrationId);
             var oldRegId = localStorage.getItem('registrationId');
             if (oldRegId !== data.registrationId) {
                 // Save new registration ID
@@ -71,12 +67,12 @@ var app = {
         });
 
         push.on('error', function(e) {
-            alert("push error = " + e.message);
+            //alert("push error = " + e.message);
 			app.initFrame('');
         });
 
         push.on('notification', function(data) {
-            alert('notification event');
+            //alert('notification event');
 			app.win.executeScript({
 				code: 'VHV.alert('+JSON.stringify(data.message)+');'
 			});
@@ -96,6 +92,7 @@ var app = {
     },
 	initFrame: function(deviceId)
 	{
+		//alert('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 		this.win = window.open('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
 	}
 };

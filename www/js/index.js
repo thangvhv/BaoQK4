@@ -95,12 +95,21 @@ var app = {
     },
 	initFrame: function()
 	{
-		this.win = window.open('http://baoquankhu4.com.vn/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+		window.open = cordova.InAppBrowser.open;
+		try{
+			document.getElementById('welcome-image').style.display = 'none';
+			app.win = cordova.InAppBrowser.open('http://baoquankhu4.com.vn/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+			app.win.show();
+		}
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
 	},
 	setDeviceId: function(deviceId)
 	{
 		app.win.executeScript({
-			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');VHV.alert(\'/?page=login&androidRegistrationId='+deviceId+'\');'
+			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');'
 		});
 	}
 };

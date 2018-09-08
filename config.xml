@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.coquan" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BaoQK4</name>
     <description>
-        Báo Quân Khu 4
+        Coquan.vn
     </description>
-    <author email="contact@baoquankhu4.com.vn" href="http://baoquankhu4.com.vn">
-        Báo Quân Khu 4
+    <author email="contact@vhv.vn" href="http://vhv.vn">
+        Coquan.vn
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />

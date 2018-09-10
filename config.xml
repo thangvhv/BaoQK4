@@ -65,6 +65,21 @@
         <allow-navigation href="*" />
         <allow-intent href="*" />
         <access origin="*" />
+		<edit-config file="*-Info.plist" mode="merge" target="NSAllowsArbitraryLoads" mode="merge" overwrite="true">
+			<false />
+		</edit-config>
+		<edit-config file="*-Info.plist" mode="merge" target="ITSAppUsesNonExemptEncryption" mode="merge" overwrite="true">
+			<false />
+		</edit-config>
+		 <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
+			  <string>Báo Quân Khu 4 cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
+		 </edit-config>
+		 <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
+			  <string>Báo Quân Khu 4 cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
+		 </edit-config>
+		 <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
+			  <string>Báo Quân Khu 4 cần truy cập microphone quay phim để upload.</string>
+		 </edit-config>
     </platform>
     <platform name="wp8">
         <icon height="99" platform="wp8" src="www/res/icon/wp8/ApplicationIcon.png" width="99" />
@@ -87,21 +102,7 @@
         <icon height="150" platform="windows" src="www/res/icon/windows/Wide310x150Logo.scale-100.png" width="310" />
         <icon height="360" platform="windows" src="www/res/icon/windows/Wide310x150Logo.scale-240.png" width="744" />
         <splash height="1920" platform="windows" src="www/res/screen/windows/SplashScreenPhone.scale-240.png" width="1152" />
-		<edit-config file="*-Info.plist" mode="merge" target="NSAllowsArbitraryLoads" mode="merge" overwrite="true">
-			<false />
-		</edit-config>
-		<edit-config file="*-Info.plist" mode="merge" target="ITSAppUsesNonExemptEncryption" mode="merge" overwrite="true">
-			<false />
-		</edit-config>
-		 <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
-			  <string>ViettelStudy cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
-		 </edit-config>
-		 <edit-config target="NSCameraUsageDescription" file="*-Info.plist" mode="merge" overwrite="true">
-			  <string>ViettelStudy cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
-		 </edit-config>
-		 <edit-config target="NSMicrophoneUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >
-			  <string>ViettelStudy cần truy cập microphone quay phim để upload.</string>
-		 </edit-config>
+		
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -122,5 +123,8 @@
     <plugin name="phonegap-plugin-push" spec="^2.1.3">
         <variable name="SENDER_ID" value="278576349838" />
     </plugin>
-    <plugin name="cordova-plugin-camera" spec="^4.0.3" />
+    <plugin name="cordova-plugin-camera" spec="^4.0.3">
+		<param name="CAMERA_USAGE_DESCRIPTION" value="Báo Quân Khu 4 cần truy cập camera chụp ảnh hoặc quay video để upload." />
+		<param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Báo Quân Khu 4 cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />
+	</plugin>
 </widget>

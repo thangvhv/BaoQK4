@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>ViTest</name>
+<widget id="vn.vhv.app.office" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>VHV Office</name>
     <description>
-        ViTest
+        VHV Office
     </description>
-    <author email="contact@vitest.edu.vn" href="http://vitest.edu.vn">
-        ViTest
+    <author email="contact@vhv.vn" href="http://vhv.vn">
+        VHV Office
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />
@@ -72,13 +72,13 @@
             <false />
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
-            <string>ViTest cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
+            <string>VHV Office cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
-            <string>ViTest cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
+            <string>VHV Office cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
-            <string>ViTest cần truy cập microphone quay phim để upload.</string>
+            <string>VHV Office cần truy cập microphone quay phim để upload.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
 			<array>
@@ -88,9 +88,7 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
 			<array>
 			  <string>UIInterfaceOrientationPortrait</string>
-			  <string>UIInterfaceOrientationLandscapeLeft</string>
 			  <string>UIInterfaceOrientationPortraitUpsideDown</string>
-			  <string>UIInterfaceOrientationLandscapeRight</string>
 			</array>
 		</edit-config>
     </platform>

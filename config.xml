@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.baoqk4" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>BaoQK4</name>
     <description>
         Báo Quân Khu 4
@@ -14,6 +14,7 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
+	<preference name="orientation" value="portrait" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -80,6 +81,19 @@
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
             <string>Báo Quân Khu 4 cần truy cập microphone quay phim để upload.</string>
         </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
+			<array>
+			  <string>UIInterfaceOrientationPortrait</string>
+			</array>
+		</edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
+			<array>
+			  <string>UIInterfaceOrientationPortrait</string>
+			  <string>UIInterfaceOrientationLandscapeLeft</string>
+			  <string>UIInterfaceOrientationPortraitUpsideDown</string>
+			  <string>UIInterfaceOrientationLandscapeRight</string>
+			</array>
+		</edit-config>
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />

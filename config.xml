@@ -80,6 +80,19 @@
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
             <string>ViTest cần truy cập microphone quay phim để upload.</string>
         </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
+			<array>
+			  <string>UIInterfaceOrientationPortrait</string>
+			</array>
+		</edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
+			<array>
+			  <string>UIInterfaceOrientationPortrait</string>
+			  <string>UIInterfaceOrientationLandscapeLeft</string>
+			  <string>UIInterfaceOrientationPortraitUpsideDown</string>
+			  <string>UIInterfaceOrientationLandscapeRight</string>
+			</array>
+		</edit-config>
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />

@@ -65,10 +65,10 @@
         <allow-navigation href="*" />
         <allow-intent href="*" />
         <access origin="*" />
-		<edit-config file="*-Info.plist" mode="merge" target="NSAllowsArbitraryLoads" mode="merge" overwrite="true">
+		<edit-config file="*-Info.plist" mode="merge" target="NSAllowsArbitraryLoads" overwrite="true">
 			<false />
 		</edit-config>
-		<edit-config file="*-Info.plist" mode="merge" target="ITSAppUsesNonExemptEncryption" mode="merge" overwrite="true">
+		<edit-config file="*-Info.plist" mode="merge" target="ITSAppUsesNonExemptEncryption" overwrite="true">
 			<false />
 		</edit-config>
 		 <edit-config target="NSPhotoLibraryUsageDescription" file="*-Info.plist" mode="merge" overwrite="true" >

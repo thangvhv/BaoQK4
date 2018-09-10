@@ -21,6 +21,9 @@
     },
     "phonegap-plugin-push": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     }
   },
   "dependent_plugins": {

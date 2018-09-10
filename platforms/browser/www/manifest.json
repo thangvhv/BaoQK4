@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "ViettelStudy",
-  "short_name": "ViettelStudy",
-  "version": "vn.vhv.app.viettelstudy",
-  "description": "Push sample application that receives push notifications.",
-  "author": "PhoneGap Team",
+  "name": "BaoQK4",
+  "short_name": "BaoQK4",
+  "version": "vn.vhv.app.baoqk4",
+  "description": "Báo Quân Khu 4",
+  "author": "Báo Quân Khu 4",
   "icons": [],
   "start_url": "index.html",
   "theme_color": "#ee6e73"

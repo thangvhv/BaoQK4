@@ -9,6 +9,7 @@
         "cordova-android": "^7.0.0",
         "cordova-browser": "^5.0.4",
         "cordova-ios": "^4.5.4",
+        "cordova-plugin-camera": "^4.0.3",
         "cordova-plugin-dialogs": "~1.2.1",
         "cordova-plugin-inappbrowser": "^3.0.0",
         "cordova-plugin-statusbar": "~2.1.3",
@@ -24,7 +25,8 @@
             "phonegap-plugin-push": {
                 "FCM_VERSION": "11.6.2",
                 "SENDER_ID": "278576349838"
-            }
+            },
+            "cordova-plugin-camera": {}
         },
         "platforms": [
             "browser",

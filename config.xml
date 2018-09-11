@@ -89,9 +89,7 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
 			<array>
 			  <string>UIInterfaceOrientationPortrait</string>
-			  <string>UIInterfaceOrientationLandscapeLeft</string>
 			  <string>UIInterfaceOrientationPortraitUpsideDown</string>
-			  <string>UIInterfaceOrientationLandscapeRight</string>
 			</array>
 		</edit-config>
     </platform>

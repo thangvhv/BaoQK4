@@ -110,7 +110,7 @@ var app = {
 	setDeviceId: function(deviceId)
 	{
 		app.win.executeScript({
-			code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.login&androidRegistrationId='+deviceId+'\';'
+			code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.home&androidRegistrationId='+deviceId+'\';'
 		});
 	}
 };

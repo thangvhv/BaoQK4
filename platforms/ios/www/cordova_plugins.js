@@ -39,11 +39,11 @@ module.exports.metadata =
 {
   "cordova-plugin-inappbrowser": "3.0.0",
   "cordova-plugin-statusbar": "2.1.3",
-  "cordova-plugin-whitelist": "1.2.2",
   "cordova-support-google-services": "1.1.0",
   "phonegap-plugin-multidex": "1.0.0",
   "phonegap-plugin-push": "2.1.3",
-  "cordova-plugin-dialogs": "2.0.1"
+  "cordova-plugin-dialogs": "2.0.1",
+  "cordova-plugin-whitelist": "1.3.3"
 };
 // BOTTOM OF METADATA
 });

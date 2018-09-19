@@ -111,7 +111,7 @@ var app = {
 	{
 		
 		app.win.executeScript({
-			code: 'alert(2);$.get(\'/?page=Mobile.login&androidRegistrationId='+deviceId+'\');'
+			code: 'alert(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); alert($); $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\');'
 		});
 	}
 };

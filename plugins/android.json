@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     },
@@ -25,6 +22,9 @@
     },
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "vn.vhv.app.baoqk4"
     }
   },
   "dependent_plugins": {

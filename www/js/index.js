@@ -42,7 +42,6 @@ var app = {
     setupPush: function() {
         //console.log('calling push init');
 		try{
-			alert(1);
         var push = PushNotification.init({
             "android": {
                 "senderID": "278576349838"
@@ -58,9 +57,9 @@ var app = {
             },
             "windows": {}
         });
-		alert(push);
+
         push.on('registration', function(data) {
-            alert('registration event: ' + data.registrationId);
+            //alert('registration event: ' + data.registrationId);
 			
             var oldRegId = localStorage.getItem('registrationId');
             if (oldRegId !== data.registrationId) {
@@ -72,7 +71,7 @@ var app = {
         });
 
         push.on('error', function(e) {
-            alert("push error = " + e.message);
+            //alert("push error = " + e.message);
 			//app.initFrame('');
         });
 
@@ -110,9 +109,9 @@ var app = {
 	},
 	setDeviceId: function(deviceId)
 	{
-		alert('ok');
+		
 		app.win.executeScript({
-			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');'
+			code: 'alert(2);$.get(\'/?page=Mobile.login&androidRegistrationId='+deviceId+'\');'
 		});
 	}
 };

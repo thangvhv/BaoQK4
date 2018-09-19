@@ -7,31 +7,31 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     },
     "phonegap-plugin-push": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     }
   },
   "dependent_plugins": {
     "cordova-support-google-services": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     },
     "phonegap-plugin-multidex": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.cosoyte"
     }
   }
 }

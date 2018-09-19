@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.colombo" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <feature name="Notification">
         <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
     </feature>
@@ -10,22 +10,22 @@
         <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="Whitelist">
-        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <feature name="PushNotification">
         <param name="android-package" value="com.adobe.phonegap.push.PushPlugin" />
     </feature>
     <feature name="Camera">
         <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
     </feature>
-    <name>BaoQK4</name>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>Colombo</name>
     <description>
-        Báo Quân Khu 4
+        Colombo
     </description>
-    <author email="contact@baoquankhu4.com.vn" href="http://baoquankhu4.com.vn">
-        Báo Quân Khu 4
+    <author email="contact@vhv.vn" href="http://vhv.vn">
+        Colombo
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -58,7 +58,7 @@
     <preference name="loglevel" value="DEBUG" />
     <preference name="phonegap-version" value="cli-8.0.0" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="26" />
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />

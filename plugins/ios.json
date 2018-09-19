@@ -7,31 +7,31 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
+    },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     },
     "phonegap-plugin-push": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     }
   },
   "dependent_plugins": {
     "cordova-support-google-services": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     },
     "phonegap-plugin-multidex": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.app.colombo"
     }
   }
 }

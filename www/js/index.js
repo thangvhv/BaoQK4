@@ -91,7 +91,7 @@ var app = {
 	   }
 		catch(e)
 		{
-			alert(e.getMessage());
+			//alert(e.getMessage());
 		}
     },
 	initFrame: function()
@@ -109,9 +109,8 @@ var app = {
 	},
 	setDeviceId: function(deviceId)
 	{
-		
 		app.win.executeScript({
-			code: 'alert(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); alert($); $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\');'
+			code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.login&androidRegistrationId='+deviceId+'\';'
 		});
 	}
 };

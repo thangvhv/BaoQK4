@@ -16,13 +16,13 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "vn.vhv.app.office"
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "vn.vhv.app.office"
-    },
     "phonegap-plugin-push": {
       "PACKAGE_NAME": "vn.vhv.app.office"
     },
     "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "vn.vhv.app.office"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "vn.vhv.app.office"
     }
   },

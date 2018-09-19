@@ -52,11 +52,12 @@ var app = {
             "ios": {
                 "sound": true,
                 "vibration": true,
-                "badge": true
+                "badge": true,
+		"clearBadge": true
             },
             "windows": {}
         });
-		
+
         push.on('registration', function(data) {
             //alert('registration event: ' + data.registrationId);
 			
@@ -90,7 +91,7 @@ var app = {
 	   }
 		catch(e)
 		{
-			alert(e.getMessage());
+			//alert(e.getMessage());
 		}
     },
 	initFrame: function()
@@ -98,7 +99,7 @@ var app = {
 		window.open = cordova.InAppBrowser.open;
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
-			app.win = cordova.InAppBrowser.open('http://baoquankhu4.com.vn/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+			app.win = cordova.InAppBrowser.open('http://office.vhv.vn/?page=Mobile.login&androidRegistrationId=mobile', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
 			app.win.show();
 		}
 		catch(e)
@@ -108,8 +109,10 @@ var app = {
 	},
 	setDeviceId: function(deviceId)
 	{
-		app.win.executeScript({
-			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');'
-		});
+		setTimeout(function(){
+			app.win.executeScript({
+				code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.login&androidRegistrationId='+deviceId+'\';'
+			});
+		}, 3000);
 	}
 };

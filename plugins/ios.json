@@ -16,13 +16,13 @@
     "cordova-plugin-statusbar": {
       "PACKAGE_NAME": "vn.vhv.app.vitest"
     },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "vn.vhv.app.vitest"
-    },
     "phonegap-plugin-push": {
       "PACKAGE_NAME": "vn.vhv.app.vitest"
     },
     "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "vn.vhv.app.vitest"
+    },
+    "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "vn.vhv.app.vitest"
     }
   },

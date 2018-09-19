@@ -26,9 +26,9 @@
 		297E60695C7B4E1C9AC0BF86 /* CDVStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C16F2E8B31974D968A0D5076 /* CDVStatusBar.m */; };
 		A879D169C63549FCBCDD5788 /* AppDelegate+notification.m in Sources */ = {isa = PBXBuildFile; fileRef = C2321C61702C4BE386F49C41 /* AppDelegate+notification.m */; };
 		9F90A2D9635E4E619FEDF47F /* PushPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA799403E37445EB5A5DACC /* PushPlugin.m */; };
-		19A4E63AB6DB4D499BC1247C /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 34459AF730E14C36823DC195 /* CDVNotification.m */; };
-		8B093BEDAFBA47A7BBDE4E49 /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0DAE279B826D4D8ABA9E9EF4 /* CDVNotification.bundle */; };
-		14D450AD0F2F4648A974D2EE /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951D987A8574795AAACE3C9 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		75B68C4E973C42F49D1DA7B9 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F57B5523784AE8AE600E20 /* CDVNotification.m */; };
+		AD02BE9BBB5F498CA88857AE /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7817DBFD532A4439A4F4A645 /* CDVNotification.bundle */; };
+		BFFDF762B519414F8B549CC6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D45E53D1B8E47C1A1263894 /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +87,10 @@
 		0AA799403E37445EB5A5DACC /* PushPlugin.m */ = {isa = PBXFileReference; name = "PushPlugin.m"; path = "phonegap-plugin-push/PushPlugin.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		8839A5B41C6D4F9F8ADC9CD6 /* AppDelegate+notification.h */ = {isa = PBXFileReference; name = "AppDelegate+notification.h"; path = "phonegap-plugin-push/AppDelegate+notification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 		C00896C96A0B407F8C7EB701 /* PushPlugin.h */ = {isa = PBXFileReference; name = "PushPlugin.h"; path = "phonegap-plugin-push/PushPlugin.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		34459AF730E14C36823DC195 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
-		7A6C3B338DBB4419BD3687FC /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
-		0DAE279B826D4D8ABA9E9EF4 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
-		9951D987A8574795AAACE3C9 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		04F57B5523784AE8AE600E20 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		8939CBD7965D47DD9E99E7D6 /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		7817DBFD532A4439A4F4A645 /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		3D45E53D1B8E47C1A1263894 /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				8EA9D252FEBB4270976020BF /* ImageIO.framework in Frameworks */,
 				200F203BA1C945A58167BEE2 /* CoreLocation.framework in Frameworks */,
 				110FD37C99AB4601BF90A2AF /* AVFoundation.framework in Frameworks */,
-				14D450AD0F2F4648A974D2EE /* AudioToolbox.framework in Frameworks */,
+				BFFDF762B519414F8B549CC6 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +165,7 @@
 				3047A50E1AB8057F00498E2A /* config */,
 				8D1107310486CEB800E47090 /* ViTest-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
-				0DAE279B826D4D8ABA9E9EF4 /* CDVNotification.bundle */,
+				7817DBFD532A4439A4F4A645 /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "ViTest/Resources";
@@ -177,7 +177,7 @@
 				2140674D02A2439A87223C3A /* ImageIO.framework */,
 				2E1C132C906B453CBB4C9EA5 /* CoreLocation.framework */,
 				EE0015ADF0AB4C0F9D3910DC /* AVFoundation.framework */,
-				9951D987A8574795AAACE3C9 /* AudioToolbox.framework */,
+				3D45E53D1B8E47C1A1263894 /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -218,8 +218,8 @@
 				0AA799403E37445EB5A5DACC /* PushPlugin.m */,
 				8839A5B41C6D4F9F8ADC9CD6 /* AppDelegate+notification.h */,
 				C00896C96A0B407F8C7EB701 /* PushPlugin.h */,
-				34459AF730E14C36823DC195 /* CDVNotification.m */,
-				7A6C3B338DBB4419BD3687FC /* CDVNotification.h */,
+				04F57B5523784AE8AE600E20 /* CDVNotification.m */,
+				8939CBD7965D47DD9E99E7D6 /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "ViTest/Plugins";
@@ -301,7 +301,7 @@
 				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
-				8B093BEDAFBA47A7BBDE4E49 /* CDVNotification.bundle in Resources */,
+				AD02BE9BBB5F498CA88857AE /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,7 +340,7 @@
 				297E60695C7B4E1C9AC0BF86 /* CDVStatusBar.m in Sources */,
 				A879D169C63549FCBCDD5788 /* AppDelegate+notification.m in Sources */,
 				9F90A2D9635E4E619FEDF47F /* PushPlugin.m in Sources */,
-				19A4E63AB6DB4D499BC1247C /* CDVNotification.m in Sources */,
+				75B68C4E973C42F49D1DA7B9 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

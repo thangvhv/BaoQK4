@@ -46,14 +46,11 @@ var app = {
             "android": {
                 "senderID": "278576349838"
             },
-            "browser": {
-				
-			},
             "ios": {
                 "sound": true,
                 "vibration": true,
                 "badge": true,
-		"clearBadge": true
+				"clearBadge": true
             },
             "windows": {}
         });
@@ -109,8 +106,10 @@ var app = {
 	},
 	setDeviceId: function(deviceId)
 	{
-		app.win.executeScript({
-			code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.home&androidRegistrationId='+deviceId+'\';'
-		});
+		setTimeout(function(){
+			app.win.executeScript({
+				code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.home&androidRegistrationId='+deviceId+'\';'
+			});
+		}, 3000);
 	}
 };

@@ -26,6 +26,7 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+		
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -33,14 +34,13 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        alert('Received Device Ready Event');
-        alert('calling setup push');
+        //alert('Received Device Ready Event');
+        //alert('calling setup push');
+		app.initFrame();
         app.setupPush();
     },
     setupPush: function() {
         //console.log('calling push init');
-		alert(window.PushNotification);
-		alert(window.PushNotification.init);
 		try{
         var push = PushNotification.init({
             "android": {
@@ -52,31 +52,31 @@ var app = {
             "ios": {
                 "sound": true,
                 "vibration": true,
-                "badge": true
+                "badge": true,
+		"clearBadge": true
             },
             "windows": {}
         });
-		alert(push);
-        alert('after init');
 		
         push.on('registration', function(data) {
-            alert('registration event: ' + data.registrationId);
+            //alert('registration event: ' + data.registrationId);
+			
             var oldRegId = localStorage.getItem('registrationId');
             if (oldRegId !== data.registrationId) {
                 // Save new registration ID
                 localStorage.setItem('registrationId', data.registrationId);
                 // Post registrationId to your app server as the value has changed
             }
-			app.initFrame(data.registrationId);
+			app.setDeviceId(data.registrationId);
         });
 
         push.on('error', function(e) {
-            alert("push error = " + e.message);
-			app.initFrame('');
+            //alert("push error = " + e.message);
+			//app.initFrame('');
         });
 
         push.on('notification', function(data) {
-            alert('notification event');
+            //alert('notification event');
 			app.win.executeScript({
 				code: 'VHV.alert('+JSON.stringify(data.message)+');'
 			});
@@ -94,8 +94,23 @@ var app = {
 			alert(e.getMessage());
 		}
     },
-	initFrame: function(deviceId)
+	initFrame: function()
 	{
-		this.win = window.open('http://viettelstudy.net/?page=Mobile.home&androidRegistrationId='+deviceId, '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes');
+		window.open = cordova.InAppBrowser.open;
+		try{
+			document.getElementById('welcome-image').style.display = 'none';
+			app.win = cordova.InAppBrowser.open('http://app.demo.coquan.vn/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+			app.win.show();
+		}
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
+	},
+	setDeviceId: function(deviceId)
+	{
+		app.win.executeScript({
+			code: '$.get(\'/?page=login&androidRegistrationId='+deviceId+'\');'
+		});
 	}
 };

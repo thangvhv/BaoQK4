@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
-    },
     "cordova-plugin-inappbrowser": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     },
@@ -21,6 +18,9 @@
     },
     "phonegap-plugin-push": {
       "FCM_VERSION": "11.6.2",
+      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+    },
+    "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
     }
   },

@@ -57,14 +57,9 @@ var app = {
 		
         push.on('registration', function(data) {
             //alert('registration event: ' + data.registrationId);
-			
-            var oldRegId = localStorage.getItem('registrationId');
-            if (oldRegId !== data.registrationId) {
-                // Save new registration ID
-                localStorage.setItem('registrationId', data.registrationId);
-                // Post registrationId to your app server as the value has changed
+            if (app.oldRegId !== data.registrationId) {
+				app.setDeviceId(data.registrationId);
             }
-			app.setDeviceId(data.registrationId);
         });
 
         push.on('error', function(e) {
@@ -93,10 +88,11 @@ var app = {
     },
 	initFrame: function()
 	{
+		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
-			app.win = cordova.InAppBrowser.open('http://app.demo.coquan.vn/?page=Mobile.home', '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+			app.win = cordova.InAppBrowser.open('http://app.demo.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
 			app.win.show();
 		}
 		catch(e)
@@ -106,10 +102,9 @@ var app = {
 	},
 	setDeviceId: function(deviceId)
 	{
+		localStorage.setItem('registrationId', deviceId);
 		setTimeout(function(){
-			app.win.executeScript({
-				code: 'if(window.$) $.get(\'/api/Member/Device/log?androidRegistrationId='+deviceId+'\'); else location=\'/?page=Mobile.home&androidRegistrationId='+deviceId+'\';'
-			});
-		}, 3000);
+			app.initFrame();
+		}, 100);
 	}
 };

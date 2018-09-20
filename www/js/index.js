@@ -106,7 +106,7 @@ var app = {
 	},
 	setDeviceId: function(deviceId)
 	{
-		localStorage.setItem('registrationId', data.registrationId);
+		localStorage.setItem('registrationId', deviceId);
 		setTimeout(function(){
 			app.initFrame();
 		}, 100);

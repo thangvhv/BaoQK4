@@ -41,8 +41,6 @@ var app = {
     },
     setupPush: function() {
         //console.log('calling push init');
-		alert(window.PushNotification);
-		alert(PushNotification.init);
 		try{
         var push = PushNotification.init({
             "android": {
@@ -59,9 +57,7 @@ var app = {
             },
             "windows": {}
         });
-		alert(push);
         push.on('registration', function(data) {
-			alert(data.registrationId);
             if (app.oldRegId !== data.registrationId) {
 				app.setDeviceId(data.registrationId);
             }
@@ -95,7 +91,6 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
-		alert('old id='+app.oldRegId);
 		window.open = cordova.InAppBrowser.open;
 		try{
 			document.getElementById('welcome-image').style.display = 'none';

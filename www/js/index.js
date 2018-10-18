@@ -41,6 +41,8 @@ var app = {
     },
     setupPush: function() {
         //console.log('calling push init');
+		alert(window.PushNotification);
+		alert(PushNotification.init);
 		try{
         var push = PushNotification.init({
             "android": {

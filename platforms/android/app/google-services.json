@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "986696097393",
+    "firebase_url": "https://kenhbanle-97d2c.firebaseio.com",
+    "project_id": "kenhbanle-97d2c",
+    "storage_bucket": "kenhbanle-97d2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986696097393:android:7a3dd59c6127db95",
+        "android_client_info": {
+          "package_name": "vn.vhv.app.kenhbanle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986696097393-de42afdlsk8ea3017qr8hkd3fqcoduob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwBb6BOQGj9VcW1gfuporc7FF2iqd6yhs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

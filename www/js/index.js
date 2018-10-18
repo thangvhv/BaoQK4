@@ -44,7 +44,7 @@ var app = {
 		try{
         var push = PushNotification.init({
             "android": {
-                "senderID": "278576349838"
+                "senderID": "142648538059"
             },
             "browser": {
 				
@@ -65,7 +65,7 @@ var app = {
         });
 
         push.on('error', function(e) {
-            //alert("push error = " + e.message);
+            alert("push error = " + e.message);
 			//app.initFrame('');
         });
 

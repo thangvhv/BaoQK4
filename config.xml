@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.18" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.baoqk4" version="1.0.19" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Báo QK4</name>
     <description>
         Báo Quân Khu 4
@@ -35,6 +35,7 @@
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
 		<resource-file src="google-services.json" target="app/google-services.json" />
+		<preference name="android-minSdkVersion" value="16" />
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -103,11 +104,11 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
-    <engine name="android" spec="^7.0.0" />
+    <engine name="android" spec="~7.0.0" />
     <engine name="ios" spec="~4.5.5" />
     <plugin name="cordova-plugin-statusbar" spec="~2.1.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
-    <plugin name="phonegap-plugin-push" spec="^2.1.3">
+    <plugin name="phonegap-plugin-push" spec="~2.1.3">
         <variable name="SENDER_ID" value="142648538059" />
     </plugin>
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />

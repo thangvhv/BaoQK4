@@ -44,7 +44,7 @@ var app = {
 		try{
         var push = PushNotification.init({
             "android": {
-                "senderID": "278576349838"
+                "senderID": "986696097393"
             },
             "browser": {
 				
@@ -57,8 +57,9 @@ var app = {
             },
             "windows": {}
         });
-		
+		alert(push);
         push.on('registration', function(data) {
+			alert(data.registrationId);
             if (app.oldRegId !== data.registrationId) {
 				app.setDeviceId(data.registrationId);
             }
@@ -66,7 +67,7 @@ var app = {
         });
 
         push.on('error', function(e) {
-            //alert("push error = " + e.message);
+            alert("push error = " + e.message);
 			//app.initFrame('');
         });
 
@@ -92,6 +93,7 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
+		alert('old id='+app.oldRegId);
 		window.open = cordova.InAppBrowser.open;
 		try{
 			document.getElementById('welcome-image').style.display = 'none';

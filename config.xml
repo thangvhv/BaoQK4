@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.kenhbanle" version="1.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.kenhbanle" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Kênh Bán Lẻ</name>
     <description>
         Kênh Bán Lẻ
@@ -34,6 +34,7 @@
         <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+		<preference name="android-minSdkVersion" value="15"/>
         <resource-file src="google-services.json" target="app/google-services.json" />
     </platform>
     <platform name="ios">
@@ -104,13 +105,12 @@
     <allow-navigation href="*" />
     <allow-intent href="*" />
     <engine name="ios" spec="~4.5.5" />
-    <plugin name="cordova-plugin-statusbar" spec="~2.1.3" />
+	<engine name="android" spec="~7.0.0" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.1.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
-    <plugin name="phonegap-plugin-push" spec="^2.1.3">
-        <variable name="SENDER_ID" value="986696097393" />
-    </plugin>
+    <plugin name="phonegap-plugin-push" spec="~2.1.2"></plugin>
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
-    <engine name="android" spec="~7.0.0" />
+    
 </widget>

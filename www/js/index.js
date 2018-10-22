@@ -95,7 +95,14 @@ var app = {
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
-				cordova.InAppBrowser.open('http://baoquankhu4.com.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'hidden=yes,fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
+				{
+					setTimeout(function(){
+						app.win.addEventListener('loadstop', function() {
+							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
+						});
+					}, 5000);
+				}
 			}
 			else
 			{

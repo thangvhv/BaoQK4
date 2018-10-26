@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.23" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Báo QK4</name>
+<widget id="vn.suckhoetoandan" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Sức khỏe toàn dân</name>
     <description>
-        Báo Quân Khu 4
+        Sức khỏe toàn dân
     </description>
-    <author email="contact@baoquankhu4.com.vn" href="http://baoquankhu4.com.vn">
-        Báo Quân Khu 4
+    <author email="contact@baoquankhu4.com.vn" href="http://suckhoetoandan.vn">
+        Sức khỏe toàn dân
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />
@@ -110,7 +110,7 @@
     <plugin name="cordova-plugin-statusbar" spec="~2.1.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />
     <plugin name="phonegap-plugin-push" spec="~2.1.3">
-        <variable name="SENDER_ID" value="142648538059" />
+        <variable name="SENDER_ID" value="485963672645" />
     </plugin>
     <plugin name="cordova-plugin-camera" spec="^4.0.3" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />

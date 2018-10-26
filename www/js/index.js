@@ -44,7 +44,7 @@ var app = {
 		try{
         var push = PushNotification.init({
             "android": {
-                "senderID": "142648538059"
+                "senderID": "485963672645"
             },
             "browser": {
 				
@@ -106,7 +106,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('http://baoquankhu4.com.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				app.win = cordova.InAppBrowser.open('https://suckhoetoandan.com/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
 				app.win.show();
 			}
 		}

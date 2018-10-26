@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "142648538059",
-    "firebase_url": "https://baoqk4-9d9b7.firebaseio.com",
-    "project_id": "baoqk4-9d9b7",
-    "storage_bucket": "baoqk4-9d9b7.appspot.com"
+    "project_number": "485963672645",
+    "firebase_url": "https://suckhoetoandan-5f3e7.firebaseio.com",
+    "project_id": "suckhoetoandan-5f3e7",
+    "storage_bucket": "suckhoetoandan-5f3e7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:142648538059:android:4cff76dabd76b668",
+        "mobilesdk_app_id": "1:485963672645:android:7a724562fad71474",
         "android_client_info": {
-          "package_name": "vn.vhv.app.baoqk4"
+          "package_name": "vn.suckhoetoandan"
         }
       },
       "oauth_client": [
         {
-          "client_id": "142648538059-mj4ia07jnlvl628pdakp6pe3j67g1opj.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBcYt4qdTsP1MByVXOB6fLxTw7dId2lQJg"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {

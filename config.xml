@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.baoqk4" version="1.0.23" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>Báo QK4</name>
+<widget id="vn.vhv.tuyengiao.office" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Ban Tuyên Giáo v1</name>
     <description>
-        Báo Quân Khu 4
+        Ban Tuyên Giáo v1
     </description>
-    <author email="contact@baoquankhu4.com.vn" href="http://baoquankhu4.com.vn">
-        Báo Quân Khu 4
+    <author email="contact@vhv.vn" href="http://tuyengiao.vhv.vn">
+        Ban Tuyên Giáo v1
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />
@@ -76,13 +76,13 @@
             <false />
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
-            <string>Báo Quân Khu 4 cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
+            <string>App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
-            <string>Báo Quân Khu 4 cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
+            <string>App cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
-            <string>Báo Quân Khu 4 cần truy cập microphone quay phim để upload.</string>
+            <string>App cần truy cập microphone quay phim để upload.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
             <array>

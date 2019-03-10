@@ -95,29 +95,29 @@
   },
   "installed_plugins": {
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "cordova-support-google-services": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "phonegap-plugin-multidex": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "phonegap-plugin-push": {
       "FCM_VERSION": "11.6.2",
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "vn.vhv.app.viettelstudy"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "vn.vhv.app.baoqk4"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "vn.vhv.app.baoqk4"
+      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     }
   },
   "dependent_plugins": {},

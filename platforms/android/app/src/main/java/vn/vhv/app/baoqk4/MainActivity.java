@@ -17,7 +17,7 @@
        under the License.
  */
 
-package vn.vhv.app.baoqk4;
+package vn.vhv.tuyengiao.office;
 
 import android.os.Bundle;
 import org.apache.cordova.*;

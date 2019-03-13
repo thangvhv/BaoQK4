@@ -106,7 +106,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('http://baoquankhu4.com.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				app.win = cordova.InAppBrowser.open('http://cucquany.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
 				app.win.show();
 			}
 		}

@@ -94,9 +94,21 @@ var app = {
 		window.open = cordova.InAppBrowser.open;
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
-			if(app.win) app.win.close();
-			app.win = cordova.InAppBrowser.open('http://office.vhv.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
-			app.win.show();
+			if(app.win){
+				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
+				{
+					setTimeout(function(){
+						app.win.addEventListener('loadstop', function() {
+							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
+						});
+					}, 5000);
+				}
+			}
+			else
+			{
+				app.win = cordova.InAppBrowser.open('https://office.vhv.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				app.win.show();
+			}
 		}
 		catch(e)
 		{

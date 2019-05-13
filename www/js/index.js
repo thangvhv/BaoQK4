@@ -92,9 +92,11 @@ var app = {
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
+		alert('Init frame');
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
+				alert(app.oldRegId);
 				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
 				{
 					alert(app.oldRegId);

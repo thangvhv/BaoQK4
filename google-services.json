@@ -1,39 +1,37 @@
 {
   "project_info": {
-    "project_number": "142648538059",
-    "firebase_url": "https://baoqk4-9d9b7.firebaseio.com",
-    "project_id": "baoqk4-9d9b7",
-    "storage_bucket": "baoqk4-9d9b7.appspot.com"
+    "project_number": "127284230534",
+    "firebase_url": "https://bantuyengiao-78d72.firebaseio.com",
+    "project_id": "bantuyengiao-78d72",
+    "storage_bucket": "bantuyengiao-78d72.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:142648538059:android:4cff76dabd76b668",
+        "mobilesdk_app_id": "1:127284230534:android:c7968f25808ceb30",
         "android_client_info": {
           "package_name": "vn.vhv.tuyengiao.office"
         }
       },
       "oauth_client": [
         {
-          "client_id": "142648538059-mj4ia07jnlvl628pdakp6pe3j67g1opj.apps.googleusercontent.com",
+          "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBcYt4qdTsP1MByVXOB6fLxTw7dId2lQJg"
+          "current_key": "AIzaSyCCQtbVq7qEpkEJl40llFU9Zb0-cmb1yck"
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

@@ -92,17 +92,13 @@ var app = {
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
-		alert('Init frame '+app.oldRegId);
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
-				alert(app.oldRegId);
 				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
 				{
-					alert(app.oldRegId);
 					setTimeout(function(){
 						app.win.addEventListener('loadstop', function() {
-							alert('Exec: '+app.oldRegId);
 							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
 						});
 					}, 5000);
@@ -123,7 +119,6 @@ var app = {
 	{
 		localStorage.setItem('registrationId', deviceId);
 		setTimeout(function(){
-			alert('Device '+deviceId);
 			app.initFrame();
 		}, 100);
 	}

@@ -65,7 +65,7 @@ var app = {
         });
 
         push.on('error', function(e) {
-            //alert("push error = " + e.message);
+            alert("push error = " + e.message);
 			//app.initFrame('');
         });
 
@@ -92,7 +92,7 @@ var app = {
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
-		alert('Init frame');
+		alert('Init frame '+app.oldRegId);
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
@@ -123,6 +123,7 @@ var app = {
 	{
 		localStorage.setItem('registrationId', deviceId);
 		setTimeout(function(){
+			alert('Device '+deviceId);
 			app.initFrame();
 		}, 100);
 	}

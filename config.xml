@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.evn" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>Ban Tuyên Giáo v1</name>
     <description>
-        Ban Tuyên Giáo v1
+        EVN KPI
     </description>
-    <author email="contact@vhv.vn" href="http://tuyengiao.vhv.vn">
-        Ban Tuyên Giáo v1
+    <author email="contact@vhv.vn" href="http://coquan.vn/evn">
+        EVN KPI
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />

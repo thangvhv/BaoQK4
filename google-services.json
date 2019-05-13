@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "127284230534",
-    "firebase_url": "https://bantuyengiao-78d72.firebaseio.com",
-    "project_id": "bantuyengiao-78d72",
-    "storage_bucket": "bantuyengiao-78d72.appspot.com"
+    "project_number": "1012297368941",
+    "firebase_url": "https://evnkpi.firebaseio.com",
+    "project_id": "evnkpi",
+    "storage_bucket": "evnkpi.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:127284230534:android:c7968f25808ceb30",
+        "mobilesdk_app_id": "1:1012297368941:android:0dc6024c0cb7353d",
         "android_client_info": {
-          "package_name": "vn.vhv.tuyengiao.office"
+          "package_name": "vn.vhv.evn"
         }
       },
       "oauth_client": [
         {
-          "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+          "client_id": "1012297368941-kfkvt67f6vnrghuku3bqngrvitd9k5t5.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCCQtbVq7qEpkEJl40llFU9Zb0-cmb1yck"
+          "current_key": "AIzaSyCrE-CtWLKKUwCsN5WrwyzeargnXq96sfE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+              "client_id": "1012297368941-kfkvt67f6vnrghuku3bqngrvitd9k5t5.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

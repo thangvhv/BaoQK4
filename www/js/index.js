@@ -44,7 +44,7 @@ var app = {
 		try{
         var push = PushNotification.init({
             "android": {
-                "senderID": "142648538059"
+                "senderID": "1012297368941"
             },
             "browser": {
 				
@@ -106,7 +106,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('https://btgtw.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				app.win = cordova.InAppBrowser.open('https://evn.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
 				app.win.show();
 			}
 		}

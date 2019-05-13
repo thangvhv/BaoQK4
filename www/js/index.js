@@ -97,8 +97,10 @@ var app = {
 			if(app.win){
 				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
 				{
+					alert(app.oldRegId);
 					setTimeout(function(){
 						app.win.addEventListener('loadstop', function() {
+							alert('Exec: '+app.oldRegId);
 							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
 						});
 					}, 5000);

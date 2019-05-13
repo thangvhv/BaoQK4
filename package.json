@@ -21,7 +21,7 @@
             "cordova-plugin-inappbrowser": {},
             "phonegap-plugin-push": {
                 "FCM_VERSION": "11.6.2",
-                "SENDER_ID": "278576349838"
+                "SENDER_ID": "239167227311"
             },
             "cordova-plugin-camera": {},
             "cordova-plugin-dialogs": {},

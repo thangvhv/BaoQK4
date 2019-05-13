@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.office" version="1.0.23" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.app.office" version="1.0.24" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>VHV Office</name>
     <description>
         VHV Office
@@ -10,7 +10,7 @@
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="DisallowOverscroll" value="true" />
-    <preference name="android-minSdkVersion" value="19" />
+    <preference name="android-minSdkVersion" value="16" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />

@@ -93,6 +93,7 @@ var app = {
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
 		//navigator.notification.activityStop();
+		
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
@@ -114,6 +115,10 @@ var app = {
 		catch(e)
 		{
 			alert(e.getMessage());
+		}
+		if(window.SpinnerPlugin)
+		{
+			SpinnerPlugin.activityStop();
 		}
 	},
 	setDeviceId: function(deviceId)

@@ -92,6 +92,7 @@ var app = {
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
+		//navigator.notification.activityStop();
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){

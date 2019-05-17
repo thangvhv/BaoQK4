@@ -108,7 +108,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('https://office.vhv.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				app.win = cordova.InAppBrowser.open('https://office.vhv.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes,hidespinner=yes');
 				app.win.show();
 			}
 		}

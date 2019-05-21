@@ -5,16 +5,131 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Báo Quân Khu 4</title>
+    <title>EVNNPC KPI</title>
+    <style>
+body {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-user-select: none;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    width:100%;
+}
+	</style>
 </head>
 
 <body>
     <img id="welcome-image" src="img/welcome.png" width="100%">
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
+<script type="text/javascript">
+       var app = {
+    // Application Constructor
+    initialize: function() {
+        this.bindEvents();
+    },
+    // Bind Event Listeners
+    //
+    // Bind any events that are required on startup. Common events are:
+    // 'load', 'deviceready', 'offline', and 'online'.
+    bindEvents: function() {
+		
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    // deviceready Event Handler
+    //
+    // The scope of 'this' is the event. In order to call the 'receivedEvent'
+    // function, we must explicitly call 'app.receivedEvent(...);'
+    onDeviceReady: function() {
+        //alert('Received Device Ready Event');
+        //alert('calling setup push');
+		app.initFrame();
+        app.setupPush();
+    },
+    setupPush: function() {
+        //console.log('calling push init');
+		try{
+        var push = PushNotification.init({
+            "android": {
+                "senderID": "1012297368941"
+            },
+            "browser": {
+				
+			},
+            "ios": {
+                "sound": true,
+                "vibration": true,
+                "badge": true,
+				"clearBadge": true
+            },
+            "windows": {}
+        });
+		
+        push.on('registration', function(data) {
+            if (app.oldRegId !== data.registrationId) {
+                app.setDeviceId(data.registrationId);
+            }
+        });
+
+        push.on('error', function(e) {
+            alert("push error = " + e.message);
+			//app.initFrame('');
+        });
+
+        push.on('notification', function(data) {
+            //alert('notification event');
+			app.win.executeScript({
+				code: 'VHV.alert('+JSON.stringify(data.message)+');'
+			});
+			//alert(data.message);
+            if(0) navigator.notification.alert(
+                data.message,         // message
+                null,                 // callback
+                data.title,           // title
+                'Ok'                  // buttonName
+            );
+       });
+	   }
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
+    },
+	initFrame: function()
+	{
+		app.oldRegId = localStorage.getItem('registrationId');
+		window.open = cordova.InAppBrowser.open;
+		try{
+			document.getElementById('welcome-image').style.display = 'none';
+			if(app.win){
+				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
+				{
+					setTimeout(function(){
+						app.win.addEventListener('loadstop', function() {
+							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
+						});
+					}, 5000);
+				}
+			}
+			else
+			{
+				app.win = cordova.InAppBrowser.open('https://evn.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes');
+				app.win.show();
+			}
+		}
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
+	},
+	setDeviceId: function(deviceId)
+	{
+		localStorage.setItem('registrationId', deviceId);
+		setTimeout(function(){
+			app.initFrame();
+		}, 100);
+	}
+};
     </script>
 </body>
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="vn.vhv.evn" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>EVN KPI</name>
+    <name>EVNNPC KPI</name>
     <description>
-        EVN KPI
+        EVNNPC KPI
     </description>
     <author email="contact@vhv.vn" href="http://coquan.vn/evn">
-        EVN KPI
+        EVNNPC KPI
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.0.0" />

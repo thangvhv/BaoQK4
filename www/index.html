@@ -20,76 +20,64 @@
 </head>
 
 <body>
-    <img id="welcome-image" src="img/welcome.png" width="100%">
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript">
+<img id="welcome-image" src="img/welcome.png" width="100%">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
 var app = {
-    // Application Constructor
     initialize: function() {
         this.bindEvents();
     },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
 		
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        //alert('Received Device Ready Event');
-        //alert('calling setup push');
 		app.initFrame();
         app.setupPush();
     },
     setupPush: function() {
-        //console.log('calling push init');
 		try{
-        var push = PushNotification.init({
-            "android": {
-                "senderID": "142648538059"
-            },
-            "browser": {
-				
-			},
-            "ios": {
-                "sound": true,
-                "vibration": true,
-                "badge": true,
-				"clearBadge": true
-            },
-            "windows": {}
-        });
-		
-        push.on('registration', function(data) {
-            if (app.oldRegId !== data.registrationId) {
-                app.setDeviceId(data.registrationId);
-            }
-        });
-
-        push.on('error', function(e) {
-            alert("push error = " + e.message);
-			//app.initFrame('');
-        });
-
-        push.on('notification', function(data) {
-            //alert('notification event');
-			app.win.executeScript({
-				code: 'VHV.alert('+JSON.stringify(data.message)+');'
+			var push = PushNotification.init({
+				"android": {
+					"senderID": "142648538059"
+				},
+				"browser": {
+					
+				},
+				"ios": {
+					"sound": true,
+					"vibration": true,
+					"badge": true,
+					"clearBadge": true
+				},
+				"windows": {}
 			});
-			//alert(data.message);
-            if(0) navigator.notification.alert(
-                data.message,         // message
-                null,                 // callback
-                data.title,           // title
-                'Ok'                  // buttonName
-            );
-       });
-	   }
+			
+			push.on('registration', function(data) {
+				if (app.oldRegId !== data.registrationId) {
+					app.setDeviceId(data.registrationId);
+				}
+			});
+	
+			push.on('error', function(e) {
+				alert("push error = " + e.message);
+				//app.initFrame('');
+			});
+	
+			push.on('notification', function(data) {
+				//alert('notification event');
+				app.win.executeScript({
+					code: 'VHV.alert('+JSON.stringify(data.message)+');'
+				});
+				//alert(data.message);
+				if(0) navigator.notification.alert(
+					data.message,         // message
+					null,                 // callback
+					data.title,           // title
+					'Ok'                  // buttonName
+				);
+		   });
+		}
 		catch(e)
 		{
 			alert(e.getMessage());
@@ -113,7 +101,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes,hidespinner=yes');
+				app.win = cordova.InAppBrowser.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes,hidespinner=yes,usewkwebview=yes');
 				app.win.show();
 			}
 		}
@@ -130,9 +118,8 @@ var app = {
 		}, 100);
 	}
 };
-
-        app.initialize();
-    </script>
+app.initialize();
+</script>
 </body>
 
 </html>

@@ -116,7 +116,7 @@
     <allow-intent href="*" />
     <engine name="android" spec="^7.1.0" />
     <engine name="ios" spec="~4.5.5" />
-	<plugin name="cordova-plugin-wkwebview-engine" spec="~2.2.0" />
+	<plugin name="cordova-plugin-wkwebview-engine"/>
 	
     <plugin name="cordova-plugin-statusbar" spec="~2.2.3" />
     <plugin name="cordova-plugin-inappbrowser" spec="^3.0.0" />

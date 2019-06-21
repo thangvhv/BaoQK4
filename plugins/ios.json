@@ -24,6 +24,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "vn.vhv.app.baoqk4"
+    },
+    "cordova-plugin-wkwebview-engine": {
+      "PACKAGE_NAME": "vn.vhv.app.baoqk4"
     }
   },
   "dependent_plugins": {

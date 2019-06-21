@@ -84,8 +84,7 @@ module.exports.metadata =
   "phonegap-plugin-push": "2.1.3",
   "cordova-plugin-camera": "4.0.3",
   "cordova-plugin-dialogs": "2.0.1",
-  "cordova-plugin-whitelist": "1.3.3",
-  "cordova-plugin-wkwebview-engine": "1.1.4"
+  "cordova-plugin-whitelist": "1.3.3"
 };
 // BOTTOM OF METADATA
 });

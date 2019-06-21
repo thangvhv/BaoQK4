@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.14" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.tuyengiao.office" version="1.0.15" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>VCNet</name>
     <description>
         VCNet
@@ -8,14 +8,13 @@
         VCNet
     </author>
     <content src="index.html" />
-    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="16" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#ee6e73" />
     <preference name="StatusBarStyle" value="blacktranslucent" />
     <preference name="orientation" value="portrait" />
-
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
     <feature name="CDVWKWebViewEngine">
@@ -23,7 +22,6 @@
     </feature>
     <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
-	
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -106,11 +104,11 @@
                 <string>UIInterfaceOrientationPortraitUpsideDown</string>
             </array>
         </edit-config>
-		<feature name="CDVWKWebViewEngine">
-			<param name="ios-package" value="CDVWKWebViewEngine" />
-		</feature>
-		<preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
-		<preference name="Allow3DTouchLinkPreview" value="false" />
+        <feature name="CDVWKWebViewEngine">
+            <param name="ios-package" value="CDVWKWebViewEngine" />
+        </feature>
+        <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
+        <preference name="Allow3DTouchLinkPreview" value="false" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -131,5 +129,4 @@
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="ViettelStudy cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />
     </plugin>
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
-    <plugin name="cordova-plugin-wkwebview-engine" spec="^1.1.4" />
 </widget>

@@ -25,9 +25,6 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "vn.vhv.app.baoqk4"
-    },
-    "cordova-plugin-wkwebview-engine": {
-      "PACKAGE_NAME": "vn.vhv.tuyengiao.office"
     }
   },
   "dependent_plugins": {

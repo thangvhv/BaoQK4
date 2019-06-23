@@ -103,6 +103,12 @@ var app = {
 			{
 				app.win = cordova.InAppBrowser.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes,hidespinner=yes,usewkwebview=yes');
 				app.win.show();
+				app.win.addEventListener('message', function (e) {
+					alert(JSON.stringify(e.data));
+					if(e.data.action === 'hide'){
+						app.win.hide();
+					}
+				});
 			}
 		}
 		catch(e)

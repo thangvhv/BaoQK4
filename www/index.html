@@ -86,7 +86,7 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
-		window.open = cordova.InAppBrowser.open;
+		//window.open = cordova.InAppBrowser.open;
 		try{
 			document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
@@ -101,7 +101,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes');
+				app.win = window.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes');
 				app.win.show();
 				app.win.addEventListener('message', function (e) {
 					alert(JSON.stringify(e.data));

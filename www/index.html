@@ -67,7 +67,7 @@ var app = {
 			push.on('notification', function(data) {
 				//alert('notification event');
 				app.win.executeScript({
-					code: 'VHV.alert('+JSON.stringify(data.message)+');'
+					code: 'VHV.app.onNotify('+JSON.stringify(data)+');'
 				});
 				//alert(data.message);
 				if(0) navigator.notification.alert(

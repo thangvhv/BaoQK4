@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.25" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>VCNet</name>
+<widget id="vn.vcnet.devel" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>VCNet Development</name>
     <description>
-        VCNet
+        VCNet Devel
     </description>
     <author email="contact@vhv.vn" href="http://vcnet.vn">
         VCNet

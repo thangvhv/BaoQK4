@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vcnet.devel" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>VCNet Development</name>
+<widget id="vn.viettelstudy.devel" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>ViettelStudy Development</name>
     <description>
-        VCNet Devel
+        ViettelStudy Devel
     </description>
-    <author email="contact@vhv.vn" href="http://vcnet.vn">
+    <author email="contact@vhv.vn" href="http://viettelstudy.vn">
         VCNet
     </author>
     <content src="index.html" />

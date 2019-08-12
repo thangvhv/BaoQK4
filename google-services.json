@@ -1,42 +1,35 @@
 {
   "project_info": {
-    "project_number": "127284230534",
-    "firebase_url": "https://bantuyengiao-78d72.firebaseio.com",
-    "project_id": "bantuyengiao-78d72",
-    "storage_bucket": "bantuyengiao-78d72.appspot.com"
+    "project_number": "533231671986",
+    "firebase_url": "https://viettelstudy-208607.firebaseio.com",
+    "project_id": "viettelstudy-208607",
+    "storage_bucket": "viettelstudy-208607.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:127284230534:android:5495a2adaaee60be",
+        "mobilesdk_app_id": "1:533231671986:android:ed67cc58e168bf8c",
         "android_client_info": {
-          "package_name": "vn.vcnet.devel"
+          "package_name": "vn.vhv.app.viettelstudy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+          "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCCQtbVq7qEpkEJl40llFU9Zb0-cmb1yck"
+          "current_key": "AIzaSyBpMCa3-5HcDxY7_5V02t4MrBGOIb4qUX4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+              "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "127284230534-njnqoh8thr3sd79l8jgpf4gqdg1o5lpj.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "vn.vcnet.devel"
-              }
             }
           ]
         }
@@ -44,35 +37,28 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:127284230534:android:c7968f25808ceb30",
+        "mobilesdk_app_id": "1:533231671986:android:b8abd51b23d8d269",
         "android_client_info": {
-          "package_name": "vn.vhv.tuyengiao.office"
+          "package_name": "vn.viettelstudy.devel"
         }
       },
       "oauth_client": [
         {
-          "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+          "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCCQtbVq7qEpkEJl40llFU9Zb0-cmb1yck"
+          "current_key": "AIzaSyBpMCa3-5HcDxY7_5V02t4MrBGOIb4qUX4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "127284230534-34ao8ut7679hm3h8mj56qsmppco7r6dc.apps.googleusercontent.com",
+              "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "127284230534-njnqoh8thr3sd79l8jgpf4gqdg1o5lpj.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "vn.vcnet.devel"
-              }
             }
           ]
         }

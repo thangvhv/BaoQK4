@@ -20,6 +20,7 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
+	<preference name="AllowBackForwardNavigationGestures" value="true" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -109,6 +110,7 @@
             </array>
         </edit-config>
         <preference name="Allow3DTouchLinkPreview" value="false" />
+		<preference name="AllowBackForwardNavigationGestures" value="true" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />

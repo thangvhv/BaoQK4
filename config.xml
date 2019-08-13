@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.viettelstudy.devel" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.viettelstudy.devel" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy Development</name>
     <description>
         ViettelStudy Devel
@@ -39,6 +39,12 @@
         <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+		<splash density="ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
         <resource-file src="google-services.json" target="app/google-services.json" />
         <resource-file src="google-services.json" target="google-services.json" />
         <resource-file src="google-services.json" target="/app/google-services.json" />

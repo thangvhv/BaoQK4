@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.viettelstudy.devel" version="1.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.viettelstudy.devel" version="1.0.8" android-versionCode="108" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>ViettelStudy Development</name>
     <description>
         ViettelStudy Devel
@@ -22,6 +22,7 @@
 	<preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
 	<preference name="AllowBackForwardNavigationGestures" value="true" />
+	
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />

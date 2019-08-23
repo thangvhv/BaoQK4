@@ -101,7 +101,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('https://beta.viettelstudy.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
+				app.win = cordova.InAppBrowser.open('https://vts3.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
 				app.win.show();
 				app.win.addEventListener('message', function (e) {
 					alert(JSON.stringify(e.data));

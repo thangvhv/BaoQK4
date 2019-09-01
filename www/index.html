@@ -32,7 +32,7 @@ var app = {
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-		app.initFrame();
+		//app.initFrame();
         app.setupPush();
     },
     setupPush: function() {
@@ -101,14 +101,15 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('https://vcnet.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
+				location = 'https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile');
+				/*app.win = cordova.InAppBrowser.open('https://vcnet.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
 				app.win.show();
 				app.win.addEventListener('message', function (e) {
 					alert(JSON.stringify(e.data));
 					if(e.data.action === 'hide'){
 						app.win.hide();
 					}
-				});
+				});*/
 			}
 		}
 		catch(e)

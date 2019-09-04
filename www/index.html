@@ -101,7 +101,7 @@ var app = {
 			}
 			else
 			{
-				app.win = cordova.InAppBrowser.open('http://27.71.224.156/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
+				app.win = cordova.InAppBrowser.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
 				app.win.show();
 				app.win.addEventListener('message', function (e) {
 					alert(JSON.stringify(e.data));

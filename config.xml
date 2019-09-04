@@ -46,12 +46,7 @@
         <preference name="AndroidLaunchMode" value="singleTop" />
         <preference name="android-minSdkVersion" value="21" />
 		<preference name="android-targetSdkVersion" value="28" />
-		<config-file parent="/*" target="AndroidManifest.xml">
-			<uses-permission android:name="android.permission.RECORD_AUDIO" />
-			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-			<uses-permission android:name="android.permission.CAMERA" />
-			<uses-feature android:name="android.hardware.camera" />
-		</config-file>
+		
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>

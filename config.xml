@@ -127,7 +127,5 @@
     <plugin name="phonegap-plugin-push" spec="2.1.3" />
 	<plugin name="cordova-plugin-whitelist" spec="^1.3.4" />
 	
-    
-	<plugin spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" source="git" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
 </widget>

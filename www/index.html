@@ -114,7 +114,9 @@ var app = {
 		}
 		catch(e)
 		{
-			alert(e.getMessage());
+			alert(e);
+			alert(e.message);
+			alert(JSON.stringify(e));
 		}
 	},
 	setDeviceId: function(deviceId)

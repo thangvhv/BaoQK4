@@ -15,6 +15,7 @@
 		margin:0px;
 		padding:0px;
 		width:100%;
+		overflow: hidden;
 	}
 	</style>
 </head>
@@ -88,31 +89,7 @@ var app = {
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
 		try{
-			location.replace('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
-			
-			//document.getElementById('welcome-image').style.display = 'none';
-			/*
-			if(app.win){
-				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
-				{
-					setTimeout(function(){
-						app.win.addEventListener('loadstop', function() {
-							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
-						});
-					}, 5000);
-				}
-			}
-			else
-			{
-				app.win = cordova.InAppBrowser.open('https://vcnet.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
-				app.win.show();
-				app.win.addEventListener('message', function (e) {
-					alert(JSON.stringify(e.data));
-					if(e.data.action === 'hide'){
-						app.win.hide();
-					}
-				});
-			}*/
+			location.replace('https://vcnet.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 		}
 		catch(e)
 		{

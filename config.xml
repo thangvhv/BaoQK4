@@ -13,8 +13,8 @@
     <preference name="android-minSdkVersion" value="21" />
 	<preference name="android-targetSdkVersion" value="28" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#ee6e73" />
-    <preference name="StatusBarStyle" value="blacktranslucent" />
+    <preference name="StatusBarBackgroundColor" value="#990500" />
+    <preference name="StatusBarStyle" value="lightcontent" />
     <preference name="orientation" value="portrait" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
@@ -133,5 +133,5 @@
     <plugin name="cordova-plugin-network-information" spec="2.0.2" />
     <plugin name="cordova-plugin-sms-receive" spec="1.0.2" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
-	
+	<plugin name="cordova-plugin-qrscanner" spec="3.0.1" />
 </widget>

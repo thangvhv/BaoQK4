@@ -88,7 +88,8 @@ var app = {
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
 		try{
-			location.replace('https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform='+cordova.platformId);
+			var saveLoginToken = localStorage.getItem('saveLoginToken');
+			location.replace('https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform='+cordova.platformId+(saveLoginToken?'&saveLoginToken='+saveLoginToken:''));
 			/*document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
 				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')

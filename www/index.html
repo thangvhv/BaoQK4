@@ -90,7 +90,8 @@ var app = {
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
 		try{
-			document.getElementById('welcome-image').style.display = 'none';
+			location.replace('https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform='+cordova.platformId);
+			/*document.getElementById('welcome-image').style.display = 'none';
 			if(app.win){
 				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
 				{
@@ -104,15 +105,15 @@ var app = {
 			else
 			{
 				location = 'https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile');
-				/*app.win = cordova.InAppBrowser.open('https://vcnet.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
+				app.win = cordova.InAppBrowser.open('https://vcnet.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
 				app.win.show();
 				app.win.addEventListener('message', function (e) {
 					alert(JSON.stringify(e.data));
 					if(e.data.action === 'hide'){
 						app.win.hide();
 					}
-				});*/
-			}
+				});
+			}*/
 		}
 		catch(e)
 		{

@@ -133,7 +133,6 @@
     <plugin name="cordova-plugin-network-information" spec="2.0.2" />
     <plugin name="cordova-plugin-sms-receive" spec="1.0.2" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
-	<plugin name="cordova-plugin-qrscanner" spec="3.0.1" />
 	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0">
         <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
     </plugin>

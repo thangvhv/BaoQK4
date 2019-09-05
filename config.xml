@@ -134,4 +134,6 @@
     <plugin name="cordova-plugin-sms-receive" spec="1.0.2" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
 	<plugin name="cordova-plugin-qrscanner" spec="3.0.1" />
+	<plugin spec="https://github.com/bitpay/cordova-plugin-qrscanner.git" source="git" />
+	
 </widget>

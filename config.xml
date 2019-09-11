@@ -50,6 +50,7 @@
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>
+		
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -110,6 +111,7 @@
         </edit-config>
         <preference name="Allow3DTouchLinkPreview" value="false" />
 		<preference name="AllowBackForwardNavigationGestures" value="true" />
+		
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -130,4 +132,7 @@
 	
 	<plugin spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" source="git" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+	<plugin name="cordova-plugin-background-mode" spec="0.7.3" />
+	<plugin name="cordova-plugin-insomnia" spec="4.3.0" />
+
 </widget>

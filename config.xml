@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.survey" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
-    <name>Asky</name>
+<widget id="vn.vhv.survey.bhxh" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+    <name>BHXH Vietnam</name>
     <description>
-        Asky
+        BHXH Vietnam
     </description>
-    <author email="contact@vhv.vn" href="http://survey.coquan.vn">
-        Asky
+    <author email="contact@vhv.vn" href="http://bhxh.coquan.vn">
+        BHXH Vietnam
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />

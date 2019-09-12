@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <title>VCNet</title>
+    <title>Chợ nhà mình</title>
     <style>
 	body {
 		-webkit-touch-callout: none;
@@ -101,7 +101,7 @@ var app = {
 			}
 			else
 			{
-				location.replace('https://bhxh.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
+				location.replace('https://chonhaminh.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 				/*app.win = cordova.InAppBrowser.open('https://survey.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
 				app.win.show();
 				app.win.addEventListener('message', function (e) {
@@ -114,9 +114,9 @@ var app = {
 		}
 		catch(e)
 		{
-			alert(e);
-			alert(e.message);
-			alert(JSON.stringify(e));
+			//alert(e);
+			//alert(e.message);
+			//alert(JSON.stringify(e));
 		}
 	},
 	setDeviceId: function(deviceId)

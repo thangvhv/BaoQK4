@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.gov.chonhaminh.v1" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.coquan.viettelsports" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>Chợ nhà mình</name>
     <description>
-        Chợ nhà mình
+        ViettelSports
     </description>
-    <author email="contact@vhv.vn" href="http://chonhaminh.gov.vn">
-		Chợ nhà mình
+    <author email="contact@vhv.vn" href="http://viettelsports.coquan.vn">
+		ViettelSports
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />
@@ -130,5 +130,7 @@
 	<plugin name="cordova-plugin-network-information" spec="2.0.2" />
 	<plugin spec="https://github.com/cordova-plugin-camera-preview/cordova-plugin-camera-preview.git" source="git" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+	<plugin name="cordova-plugin-qrscanner" spec="^3.0.1" />
+	
 
 </widget>

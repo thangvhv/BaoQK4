@@ -91,9 +91,7 @@
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
             <string>App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
         </edit-config>
-        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
-            <string>App cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
-        </edit-config>
+        
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
             <string>App cần truy cập microphone quay phim để upload.</string>
         </edit-config>

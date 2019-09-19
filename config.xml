@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.34" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.vhv.tuyengiao.office" version="1.0.35" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>VCNet</name>
     <description>
         VCNet
@@ -13,7 +13,7 @@
     <preference name="android-minSdkVersion" value="21" />
 	<preference name="android-targetSdkVersion" value="28" />
     <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarStyle" value="blacktranslucent" />
+    <preference name="StatusBarStyle" value="default" />
 	<preference name="StatusBarBackgroundColor" value="#FFFFFF" />
     <preference name="orientation" value="portrait" />
     <preference name="show-splash-screen-spinner" value="false" />
@@ -21,6 +21,7 @@
 	<preference name="AutoHideSplashScreen" value="true" />
 	<preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
+	<preference name="Fullscreen" value="true" /> 
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -107,8 +108,17 @@
                 <string>UIInterfaceOrientationPortraitUpsideDown</string>
             </array>
         </edit-config>
+		<edit-config target="UIStatusBarHidden" file="*-Info.plist" mode="overwrite" platform="ios">
+		  <true/>
+		</edit-config>
+		<edit-config target="UIViewControllerBasedStatusBarAppearance" file="*-Info.plist" mode="overwrite" platform="ios">
+		  <false/>
+		</edit-config>
         <preference name="Allow3DTouchLinkPreview" value="false" />
 		<preference name="AllowBackForwardNavigationGestures" value="true" />
+		<feature name="StatusBar">
+            <param name="ios-package" value="CDVStatusBar" onload="true" />
+        </feature
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />

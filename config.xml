@@ -108,17 +108,17 @@
                 <string>UIInterfaceOrientationPortraitUpsideDown</string>
             </array>
         </edit-config>
-		<edit-config target="UIStatusBarHidden" file="*-Info.plist" mode="overwrite" platform="ios">
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UIStatusBarHidden">
 		  <true/>
 		</edit-config>
-		<edit-config target="UIViewControllerBasedStatusBarAppearance" file="*-Info.plist" mode="overwrite" platform="ios">
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UIViewControllerBasedStatusBarAppearance">
 		  <false/>
 		</edit-config>
         <preference name="Allow3DTouchLinkPreview" value="false" />
 		<preference name="AllowBackForwardNavigationGestures" value="true" />
 		<feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
-        </feature
+		</feature>
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />

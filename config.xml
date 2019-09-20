@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.35" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.vhv.tuyengiao.office" version="1.0.37" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>VCNet</name>
     <description>
         VCNet
@@ -51,6 +51,13 @@
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>
+		<config-file parent="/*" target="AndroidManifest.xml">
+          <uses-permission android:name="android.permission.RECORD_AUDIO" />
+          <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+          <uses-permission android:name="android.permission.CAMERA" />
+          <uses-feature android:name="android.hardware.camera" />
+        </config-file>
+		
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -120,6 +127,7 @@
 		<feature name="StatusBar">
             <param name="ios-package" value="CDVStatusBar" onload="true" />
 		</feature>
+		
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -148,4 +156,5 @@
 	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0">
         <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
     </plugin>
+	<plugin name="cordova-plugin-iosrtc" spec="5.0.2" />
 </widget>

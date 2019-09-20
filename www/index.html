@@ -89,7 +89,7 @@ var app = {
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
 		try{
-			location.replace('https://vcnet.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
+			location.replace('http://27.71.224.156/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 		}
 		catch(e)
 		{

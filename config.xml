@@ -22,6 +22,7 @@
 	<preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
 	<preference name="Fullscreen" value="true" /> 
+	<preference name="LoadUrlTimeoutValue" value="60000"/>
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />

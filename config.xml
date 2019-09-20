@@ -51,13 +51,6 @@
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>
-		<config-file parent="/*" target="AndroidManifest.xml">
-          <uses-permission android:name="android.permission.RECORD_AUDIO" />
-          <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-          <uses-permission android:name="android.permission.CAMERA" />
-          <uses-feature android:name="android.hardware.camera" />
-        </config-file>
-		
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />

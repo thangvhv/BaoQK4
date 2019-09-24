@@ -20,7 +20,7 @@
 </head>
 
 <body>
-<img id="welcome-image" src="img/welcome.png" width="100%">
+<img id="welcome-image" src="img/welcome.png" alt="" width="100%">
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript">
 var app = {
@@ -86,33 +86,10 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
-		window.open = cordova.InAppBrowser.open;
 		try{
 			var saveLoginToken = localStorage.getItem('saveLoginToken');
 			location.replace('https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform='+cordova.platformId);
-			/*document.getElementById('welcome-image').style.display = 'none';
-			if(app.win){
-				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
-				{
-					setTimeout(function(){
-						app.win.addEventListener('loadstop', function() {
-							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
-						});
-					}, 5000);
-				}
-			}
-			else
-			{
-				location = 'https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile');
-				app.win = cordova.InAppBrowser.open('https://vcnet.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
-				app.win.show();
-				app.win.addEventListener('message', function (e) {
-					alert(JSON.stringify(e.data));
-					if(e.data.action === 'hide'){
-						app.win.hide();
-					}
-				});
-			}*/
+			
 		}
 		catch(e)
 		{

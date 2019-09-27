@@ -23,6 +23,8 @@
     <preference name="Allow3DTouchLinkPreview" value="false" />
 	<preference name="Fullscreen" value="true" /> 
 	<preference name="LoadUrlTimeoutValue" value="60000"/>
+	<preference name="SuppressesLongPressGesture" value="true" />
+	
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -51,14 +53,7 @@
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>
-		<feature name="http://api.phonegap.com/1.0/battery"/>
-		<feature name="http://api.phonegap.com/1.0/camera"/>
-		<feature name="http://api.phonegap.com/1.0/contacts"/>
-		<feature name="http://api.phonegap.com/1.0/file"/>
-		<feature name="http://api.phonegap.com/1.0/geolocation"/>
-		<feature name="http://api.phonegap.com/1.0/media"/>
-		<feature name="http://api.phonegap.com/1.0/network"/>
-		<feature name="http://api.phonegap.com/1.0/notification"/>
+		
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -114,6 +109,10 @@
                 <string>UIInterfaceOrientationPortrait</string>
             </array>
         </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription">
+            <string>App cần truy cập tọa độ để tìm kiếm địa điểm lân cận.</string>
+        </edit-config>
+		
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
             <array>
                 <string>UIInterfaceOrientationPortrait</string>
@@ -154,8 +153,12 @@
         <param name="CAMERA_USAGE_DESCRIPTION" value="VCNet cần truy cập camera chụp ảnh hoặc quay video để upload." />
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="VCNet cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />
     </plugin>
+	<plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
+	<plugin name="cordova-plugin-device" spec="^2.0.3" />
+	<plugin name="cordova-plugin-file" spec="^6.0.2" />
+	<plugin name="cordova-plugin-media" spec="^5.0.3" />
+	<plugin name="cordova-plugin-file-transfer" spec="^1.7.1"/>
+	<plugin name="cordova-plugin-geolocation" spec="^4.0.2"/>
 	<plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
-	
 	<plugin name="cordova-plugin-contacts" spec="3.0.1" />
-	
 </widget>

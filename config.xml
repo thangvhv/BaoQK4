@@ -11,17 +11,19 @@
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="21" />
-	<preference name="android-targetSdkVersion" value="28" />
+    <preference name="android-targetSdkVersion" value="28" />
     <preference name="StatusBarOverlaysWebView" value="true" />
-    <preference name="StatusBarBackgroundColor" value="#990500" />
-    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="StatusBarStyle" value="default" />
+    <preference name="StatusBarBackgroundColor" value="#FFFFFF" />
     <preference name="orientation" value="portrait" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
-	<preference name="AutoHideSplashScreen" value="true" />
-	<preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="AutoHideSplashScreen" value="true" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
     <preference name="Allow3DTouchLinkPreview" value="false" />
-	
+    <preference name="Fullscreen" value="true" />
+    <preference name="LoadUrlTimeoutValue" value="60000" />
+    <preference name="SuppressesLongPressGesture" value="true" />
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
@@ -46,10 +48,10 @@
         <resource-file src="google-services.json" target="/app/google-services.json" />
         <preference name="AndroidLaunchMode" value="singleTop" />
         <preference name="android-minSdkVersion" value="21" />
-		<preference name="android-targetSdkVersion" value="28" />
-		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-			<application android:usesCleartextTraffic="true" />
-		</edit-config>
+        <preference name="android-targetSdkVersion" value="28" />
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+        </edit-config>
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -91,19 +93,22 @@
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
             <string>App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
         </edit-config>
-		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSContactsUsageDescription">
-            <string>App cần truy cập danh bạ</string>
-        </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
             <string>App cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
             <string>App cần truy cập microphone quay phim để upload.</string>
         </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSContactsUsageDescription">
+            <string>App cần truy cập danh bạ để đề xuất kết bạn.</string>
+        </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
             <array>
                 <string>UIInterfaceOrientationPortrait</string>
             </array>
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription">
+            <string>App cần truy cập tọa độ để tìm kiếm địa điểm lân cận.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
             <array>
@@ -111,11 +116,17 @@
                 <string>UIInterfaceOrientationPortraitUpsideDown</string>
             </array>
         </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UIStatusBarHidden">
+            <true />
+        </edit-config>
+        <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UIViewControllerBasedStatusBarAppearance">
+            <false />
+        </edit-config>
         <preference name="Allow3DTouchLinkPreview" value="false" />
-		<preference name="AllowBackForwardNavigationGestures" value="true" />
-		<feature name="StatusBar">
-			<param name="ios-package" value="CDVStatusBar" onload="true" />
-		</feature>
+        <preference name="AllowBackForwardNavigationGestures" value="true" />
+        <feature name="StatusBar">
+            <param name="ios-package" onload="true" value="CDVStatusBar" />
+        </feature>
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -126,25 +137,24 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
-    <engine name="android" spec="^7.1.2" />
     <engine name="ios" spec="~5.0.1" />
-
     <plugin name="cordova-plugin-statusbar" spec="~2.2.3" />
+    <plugin name="cordova-plugin-network-information" spec="2.0.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.1.0" />
     <plugin name="phonegap-plugin-push" spec="2.1.3" />
+    <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+    <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
     <plugin name="cordova-plugin-camera" spec="^4.0.3">
         <param name="CAMERA_USAGE_DESCRIPTION" value="VCNet cần truy cập camera chụp ảnh hoặc quay video để upload." />
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="VCNet cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />
     </plugin>
+    <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
+    <plugin name="cordova-plugin-device" spec="^2.0.3" />
+    <plugin name="cordova-plugin-file" spec="^6.0.2" />
+    <plugin name="cordova-plugin-media" spec="^5.0.3" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
+    <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
-	<plugin name="cordova-plugin-whitelist" spec="1.3.4" />
-    <plugin name="cordova-plugin-network-information" spec="2.0.2" />
-    <plugin name="cordova-plugin-sms-receive" spec="1.0.2" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
-	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0">
-        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
-    </plugin>
-	<plugin name="atom-plugin-telephonenumber" spec="0.0.1" />
-	<plugin name="cordova-plugin-x-socialsharing" spec="5.6.0" />
-	
+    <engine name="android" spec="~7.1.4" />
 </widget>

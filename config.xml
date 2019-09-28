@@ -165,7 +165,8 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
-	<plugin name="cordova-plugin-qrscanner" spec="https://github.com/SilentKernel/cordova-plugin-qrscanner.git" />
+	<plugin name="cordova-plugin-add-swift-support" source="npm" spec="~2.0.2" />
+	<plugin name="cordova-plugin-qrscanner" source="npm" spec="~3.0.1" />
 	
     <engine name="android" spec="~7.1.4" />
 </widget>

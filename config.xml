@@ -152,7 +152,7 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
-    <engine name="android" spec="^8.0.0" />
+    <engine name="android" spec="^7.1.2" />
     <engine name="ios" spec="~5.0.1" />
     <plugin name="cordova-plugin-statusbar" spec="~2.2.3" />
 	<plugin name="cordova-plugin-network-information" spec="2.0.2" />

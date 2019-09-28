@@ -43,6 +43,12 @@
         <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+		<splash density="ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
         <resource-file src="google-services.json" target="app/google-services.json" />
         <resource-file src="google-services.json" target="google-services.json" />
         <resource-file src="google-services.json" target="/app/google-services.json" />
@@ -156,5 +162,7 @@
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
+	<plugin name="cordova-plugin-qrscanner" spec="3.0.1" />
+	
     <engine name="android" spec="~7.1.4" />
 </widget>

@@ -130,6 +130,9 @@
         </edit-config>
         <preference name="Allow3DTouchLinkPreview" value="false" />
         <preference name="AllowBackForwardNavigationGestures" value="true" />
+		<preference name="UseSwiftLanguageVersion" value="4" />
+		<preference name="SwiftVersion" value="4.2" />
+		<hook type="after_platform_add" src="plugins/cordova-plugin-qrscanner/scripts/swift-support.js" />
         <feature name="StatusBar">
             <param name="ios-package" onload="true" value="CDVStatusBar" />
         </feature>

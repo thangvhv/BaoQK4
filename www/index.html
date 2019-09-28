@@ -16,9 +16,10 @@
 	</style>
 </head>
 <body>
-    <img id="welcome-image" src="img/welcome.jpg" width="100%">
+    <img id="welcome-image" src="img/welcome.png" width="100%">
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript">
+		
 var app = {
     initialize: function() {
         this.bindEvents();
@@ -33,75 +34,58 @@ var app = {
     },
     setupPush: function() {
 		try{
-        var push = PushNotification.init({
-            "android": {
-                "senderID": "239167227311"
-            },
-            "browser": {
-				
-			},
-            "ios": {
-                "sound": true,
-                "vibration": true,
-                "badge": true,
-		"clearBadge": true
-            },
-            "windows": {}
-        });
-
-        push.on('registration', function(data) {
-            if (app.oldRegId !== data.registrationId) {
-				app.setDeviceId(data.registrationId);
-            }
-        });
-
-        push.on('error', function(e) {
-            alert("push error = " + e.message);
-			//app.initFrame('');
-        });
-
-        push.on('notification', function(data) {
-            //alert('notification event');
-			app.win.executeScript({
-				code: 'VHV.alert('+JSON.stringify(data.message)+');'
+			var push = PushNotification.init({
+				"android": {
+					"senderID": "239167227311"
+				},
+				"browser": {
+					
+				},
+				"ios": {
+					"sound": true,
+					"vibration": true,
+					"badge": true,
+					"clearBadge": true
+				},
+				"windows": {}
 			});
-			//alert(data.message);
-            if(0) navigator.notification.alert(
-                data.message,         // message
-                null,                 // callback
-                data.title,           // title
-                'Ok'                  // buttonName
-            );
-       });
-	   }
+			
+			push.on('registration', function(data) {
+				if (app.oldRegId !== data.registrationId) {
+					app.setDeviceId(data.registrationId);
+				}
+			});
+	
+			push.on('error', function(e) {
+				alert("push error = " + e.message);
+				//app.initFrame('');
+			});
+	
+			push.on('notification', function(data) {
+				//alert('notification event');
+				app.win.executeScript({
+					code: 'VHV.app.onNotify('+JSON.stringify(data)+');'
+				});
+				//alert(data.message);
+				if(0) navigator.notification.alert(
+					data.message,         // message
+					null,                 // callback
+					data.title,           // title
+					'Ok'                  // buttonName
+				);
+		   });
+		}
 		catch(e)
 		{
-			//alert(e.getMessage());
+			alert(e.getMessage());
 		}
     },
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
 		window.open = cordova.InAppBrowser.open;
-		//navigator.notification.activityStop();
-		
 		try{
-			document.getElementById('welcome-image').style.display = 'none';
-			if(app.win){
-				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
-				{
-					setTimeout(function(){
-						app.win.addEventListener('loadstop', function() {
-							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
-						});
-					}, 5000);
-				}
-			}
-			else
-			{
-				app.win = cordova.InAppBrowser.open('https://office.vhv.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,allowInlineMediaPlayback=yes,hidespinner=yes');
-				app.win.show();
-			}
+			location.replace('https://office.vhv.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 		}
 		catch(e)
 		{
@@ -117,6 +101,6 @@ var app = {
 	}
 };
 app.initialize();
-    </script>
+</script>
 </body>
 </html>

@@ -25,15 +25,17 @@
 <script type="text/javascript">
 var app = {
     initialize: function() {
-        this.bindEvents();
-    },
-    bindEvents: function() {
-		
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-    onDeviceReady: function() {
-		//app.initFrame();
-        app.setupPush();
+        document.addEventListener('deviceready', function() {
+			app.initFrame();
+			/*
+			if(localStorage.getItem('registrationId'))
+			{
+				app.initFrame();
+			}
+			else{
+				app.setupPush();
+			}*/
+		}, false);
     },
     setupPush: function() {
 		try{
@@ -87,9 +89,7 @@ var app = {
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
 		try{
-			var saveLoginToken = localStorage.getItem('saveLoginToken');
 			location.replace('https://vcnetlocal.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform='+cordova.platformId);
-			
 		}
 		catch(e)
 		{

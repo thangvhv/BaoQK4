@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <title>VCNet</title>
+    <title>HTTT Giáo dục</title>
     <style>
 	body {
 		-webkit-touch-callout: none;
@@ -25,15 +25,15 @@
 <script type="text/javascript">
 var app = {
     initialize: function() {
-        this.bindEvents();
-    },
-    bindEvents: function() {
-		
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-		//app.initFrame();
-        app.setupPush();
+		if(localStorage.getItem('registrationId')){
+			app.initFrame();
+		}
+		else{
+			app.setupPush();
+		}
     },
     setupPush: function() {
 		try{
@@ -60,23 +60,9 @@ var app = {
 			});
 	
 			push.on('error', function(e) {
-				alert("push error = " + e.message);
-				//app.initFrame('');
+				app.initFrame();
 			});
 	
-			push.on('notification', function(data) {
-				//alert('notification event');
-				app.win.executeScript({
-					code: 'VHV.app.onNotify('+JSON.stringify(data)+');'
-				});
-				//alert(data.message);
-				if(0) navigator.notification.alert(
-					data.message,         // message
-					null,                 // callback
-					data.title,           // title
-					'Ok'                  // buttonName
-				);
-		   });
 		}
 		catch(e)
 		{
@@ -86,38 +72,7 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
-		window.open = cordova.InAppBrowser.open;
-		try{
-			document.getElementById('welcome-image').style.display = 'none';
-			if(app.win){
-				if(app.oldRegId != 'mobile' && app.oldRegId != 'web' && app.oldRegId != 'BLACKLISTED')
-				{
-					setTimeout(function(){
-						app.win.addEventListener('loadstop', function() {
-							app.win.executeScript({code: "VHV.Model('Member.Device.log')({androidRegistrationId:'"+app.oldRegId+"'});"});
-						});
-					}, 5000);
-				}
-			}
-			else
-			{
-				location.replace('https://bhxh.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
-				/*app.win = cordova.InAppBrowser.open('https://survey.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile'), '_blank', 'fullscreen=yes,location=no,zoom=no,status=no,toolbar=no,titlebar=no,disallowoverscroll=yes,hidespinner=yes,clearcache=no,clearsessioncache=no');
-				app.win.show();
-				app.win.addEventListener('message', function (e) {
-					alert(JSON.stringify(e.data));
-					if(e.data.action === 'hide'){
-						app.win.hide();
-					}
-				});*/
-			}
-		}
-		catch(e)
-		{
-			alert(e);
-			alert(e.message);
-			alert(JSON.stringify(e));
-		}
+		location.replace('https://httt.coquan.vn/?page=Mobile.login&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 	},
 	setDeviceId: function(deviceId)
 	{

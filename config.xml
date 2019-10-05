@@ -100,6 +100,10 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationAlwaysUsageDescription ">
             <string>App cần truy cập tọa độ của bạn.</string>
         </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription ">
+            <string>App cần truy cập tọa độ của bạn.</string>
+        </edit-config>
+		 
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSContactsUsageDescription">
             <string>App cần truy cập danh bạ để đề xuất kết bạn.</string>
         </edit-config>

@@ -11,7 +11,7 @@
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="21" />
-	<preference name="android-targetSdkVersion" value="28" />
+	<preference name="android-targetSdkVersion" value="27" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="default" />
 	<preference name="StatusBarBackgroundColor" value="#FFFFFF" />
@@ -49,7 +49,7 @@
         <resource-file src="google-services.json" target="/app/google-services.json" />
         <preference name="AndroidLaunchMode" value="singleTop" />
         <preference name="android-minSdkVersion" value="21" />
-		<preference name="android-targetSdkVersion" value="28" />
+		<preference name="android-targetSdkVersion" value="27" />
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>

@@ -5,17 +5,87 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Báo Quân Khu 4</title>
+    <title>Sức khỏe toàn dân</title>
+    <style>
+	body {
+		-webkit-touch-callout: none;
+		-webkit-text-size-adjust: none;
+		-webkit-user-select: none;
+		height:100%;
+		margin:0px;
+		padding:0px;
+		width:100%;
+		overflow: hidden;
+	}
+	</style>
 </head>
 
 <body>
-    <img id="welcome-image" src="img/welcome.png" width="100%">
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+<img id="welcome-image" src="img/welcome.png" width="100%" alt="">
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript">
+var app = {
+    initialize: function() {
+        this.bindEvents();
+    },
+    bindEvents: function() {
+		
+        document.addEventListener('deviceready', this.onDeviceReady, false);
+    },
+    onDeviceReady: function() {
+		if(localStorage.getItem('registrationId')){
+			app.initFrame();
+		}
+        app.setupPush();
+    },
+    setupPush: function() {
+		try{
+			var push = PushNotification.init({
+				"android": {
+					"senderID": "142648538059"
+				},
+				"browser": {
+					
+				},
+				"ios": {
+					"sound": true,
+					"vibration": true,
+					"badge": true,
+					"clearBadge": true
+				},
+				"windows": {}
+			});
+			
+			push.on('registration', function(data) {
+				if (app.oldRegId !== data.registrationId) {
+					app.setDeviceId(data.registrationId);
+				}
+			});
+	
+			push.on('error', function(e) {
+				app.initFrame();
+			});
+		}
+		catch(e)
+		{
+			alert(e.getMessage());
+		}
+    },
+	initFrame: function()
+	{
+		app.oldRegId = localStorage.getItem('registrationId');
+		location.replace('https://suckhoetoandan.com/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
+	},
+	setDeviceId: function(deviceId)
+	{
+		localStorage.setItem('registrationId', deviceId);
+		setTimeout(function(){
+			app.initFrame();
+		}, 100);
+	}
+};
+app.initialize();
+</script>
 </body>
 
 </html>

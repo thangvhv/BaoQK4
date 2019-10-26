@@ -69,7 +69,7 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
-		location.replace('https://chonhaminh.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
+		location.replace('https://chonhaminh.gov.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 	},
 	setDeviceId: function(deviceId)
 	{

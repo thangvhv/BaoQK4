@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:533231671986:android:ed67cc58e168bf8c",
+        "mobilesdk_app_id": "1:533231671986:android:aae5d6670d7d8316ccc7ab",
         "android_client_info": {
-          "package_name": "vn.vhv.app.viettelstudy"
+          "package_name": "vn.edu.vitest"
         }
       },
       "oauth_client": [
@@ -37,9 +37,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:533231671986:android:f7ea1c50efadc748ccc7ab",
+        "mobilesdk_app_id": "1:533231671986:android:ed67cc58e168bf8c",
         "android_client_info": {
-          "package_name": "vn.vhv.app.vitest"
+          "package_name": "vn.vhv.app.viettelstudy"
         }
       },
       "oauth_client": [

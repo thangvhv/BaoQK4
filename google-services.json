@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:da79c9a5cd0c2edb80072c",
+        "android_client_info": {
+          "package_name": "com.suckhoevietnam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:485963672645:android:7a724562fad71474",
         "android_client_info": {
           "package_name": "vn.suckhoetoandan"
@@ -25,15 +54,13 @@
         }
       ],
       "services": {
-        "analytics_service": {
-          "status": 1
-        },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
-        },
-        "ads_service": {
-          "status": 2
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

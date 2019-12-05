@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.suckhoetoandan.app" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Sức khỏe toàn dân</name>
+<widget id="vn.suckhoetoandan.hue" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Huế Healthcare</name>
     <description>
-        Sức Khỏe Việt Nam
+        Huế Healthcare
     </description>
-    <author email="contact@baoquankhu4.com.vn" href="http://suckhoetoandan.vn">
-        Sức Khỏe Việt Nam
+    <author email="contact@suckhoetoandan.vn" href="http://suckhoetoandan.vn">
+        Huế Healthcare
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />

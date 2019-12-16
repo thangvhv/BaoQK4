@@ -37,6 +37,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:533231671986:android:247b385b3d42c38dccc7ab",
+        "android_client_info": {
+          "package_name": "vn.edu.vitest.local"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpMCa3-5HcDxY7_5V02t4MrBGOIb4qUX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533231671986-fqb4va023pcs88asovje9310v52t1820.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:533231671986:android:ed67cc58e168bf8c",
         "android_client_info": {
           "package_name": "vn.vhv.app.viettelstudy"

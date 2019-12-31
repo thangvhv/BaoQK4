@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.46" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.vhv.tuyengiao.office" version="1.0.47" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>VCNet</name>
     <description>
         VCNet
@@ -93,13 +93,13 @@
             <false />
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
-            <string>App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
+            <string>VCNet cần truy cập thư viện ảnh khi bạn cần đăng hình ảnh, video lên tường của bạn.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
-            <string>App cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
+            <string>VCNet cần truy cập camera để chụp ảnh hoặc quay video khi bạn cần đăng hình ảnh, video lên tường của bạn.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
-            <string>App cần truy cập microphone quay phim để upload.</string>
+            <string>VCNet cần truy cập microphone để ghi âm khi bạn cần đăng video, bản ghi âm lên tường của bạn.</string>
         </edit-config>
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSContactsUsageDescription">
             <string>App cần truy cập danh bạ để đề xuất kết bạn.</string>

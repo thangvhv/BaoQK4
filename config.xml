@@ -136,6 +136,7 @@
         <preference name="Allow3DTouchLinkPreview" value="false" />
         <preference name="AllowBackForwardNavigationGestures" value="true" />
 		<preference name="UseSwiftLanguageVersion" value="4.2" />
+		<preference name="swift-version" value="4.2" />
         <feature name="StatusBar">
             <param name="ios-package" onload="true" value="CDVStatusBar" />
         </feature>

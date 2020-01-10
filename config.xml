@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.48" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.vhv.tuyengiao.office" version="1.0.49" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>VCNet</name>
     <description>
         VCNet
@@ -15,7 +15,7 @@
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="default" />
 	<preference name="StatusBarBackgroundColor" value="#FFFFFF" />
-    <preference name="orientation" value="default" />
+    
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
 	<preference name="AutoHideSplashScreen" value="true" />
@@ -50,6 +50,7 @@
         <preference name="AndroidLaunchMode" value="singleTop" />
         <preference name="android-minSdkVersion" value="21" />
 		<preference name="android-targetSdkVersion" value="28" />
+		<preference name="Orientation" value="sensorLandscape" />
 		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
 			<application android:usesCleartextTraffic="true" />
 		</edit-config>
@@ -112,8 +113,9 @@
                 <string>UIInterfaceOrientationLandscapeRight</string>
             </array>
         </edit-config>
+		<preference name="Orientation" value="all" />
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription">
-            <string>App cần truy cập tọa độ để tìm kiếm địa điểm lân cận.</string>
+            <string>VCNet cần truy cập tọa độ để tìm kiếm địa điểm lân cận.</string>
         </edit-config>
 		
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">

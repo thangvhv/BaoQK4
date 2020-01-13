@@ -141,7 +141,8 @@
         <feature name="StatusBar">
             <param name="ios-package" onload="true" value="CDVStatusBar" />
         </feature>
-		
+		<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" />
+	<plugin name="cordova-plugin-iosrtc" spec="6.0.5" />
     </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -173,8 +174,7 @@
     <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
 	
-	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" />
-	<plugin name="cordova-plugin-iosrtc" spec="6.0.5" />
+	
 	<plugin name="cordova-plugin-screen-orientation" spec="3.0.2" />
     <engine name="android" spec="~7.1.4" />
 </widget>

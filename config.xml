@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vcnet.devel" version="1.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="vn.vcnet.devel" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>VCNet Development</name>
     <description>
         VCNet
@@ -64,6 +64,7 @@
             <application android:largeHeap="true" android:usesCleartextTraffic="true" android:windowSoftInputMode="adjustPan"/>
         </edit-config>
 		<preference name="android-windowSoftInputMode" value="adjustPan" />
+		<plugin name="cordova-plugin-tapjackingprotection" spec="0.1.1" />
     </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />

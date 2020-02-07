@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.suckhoetoandan.app" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Sức khỏe Việt Nam</name>
+<widget id="vn.admm" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ADMM</name>
     <description>
-        Sức Khỏe Việt Nam
+         ASEAN Defence - Military Meeting
     </description>
-    <author email="contact@vhv.vn" href="http://suckhoetoandan.vn">
-        Sức Khỏe Việt Nam
+    <author email="contact@admm.vn" href="http://admm.vn">
+         ASEAN Defence - Military Meeting
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />

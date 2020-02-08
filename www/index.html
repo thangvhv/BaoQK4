@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
-    <title>Sức khỏe Việt Nam</title>
+    <title>ADMM</title>
     <style>
 	body {
 		-webkit-touch-callout: none;
@@ -74,7 +74,7 @@ var app = {
 	initFrame: function()
 	{
 		app.oldRegId = localStorage.getItem('registrationId');
-		location.replace('https://suckhoetoandan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
+		location.replace('https://admm.coquan.vn/?page=Mobile.home&androidRegistrationId='+(app.oldRegId?app.oldRegId:'mobile')+'&platform=' + cordova.platformId);
 	},
 	setDeviceId: function(deviceId)
 	{

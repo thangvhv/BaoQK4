@@ -8,6 +8,93 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:239167227311:android:b34c78589272d6bbe1db5a",
+        "android_client_info": {
+          "package_name": "vn.coquan.httt.yte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239167227311:android:783e15bdd8168571e1db5a",
+        "android_client_info": {
+          "package_name": "vn.coquan.viettelsports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239167227311:android:4c1c69be8e423bafe1db5a",
+        "android_client_info": {
+          "package_name": "vn.gov.chonhaminh.v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:239167227311:android:9e3af096d5a5a2a2",
         "android_client_info": {
           "package_name": "vn.vhv.app.office"

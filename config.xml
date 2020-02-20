@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.tuyengiao.office" version="1.0.53" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.vhv.tuyengiao.office" version="1.0.54" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>VCNet</name>
     <description>
         VCNet
@@ -88,6 +88,15 @@
         <splash height="1024" platform="ios" src="www/res/screen/ios/Default-Portrait~ipad.png" width="768" />
         <splash height="960" platform="ios" src="www/res/screen/ios/Default@2x~iphone.png" width="640" />
         <splash height="480" platform="ios" src="www/res/screen/ios/Default~iphone.png" width="320" />
+		<splash height="1334" width="1334" src=”www/splash/ios/default@2x~iphone~anyany.png” />
+		<splash width="750" height="1334" src=”www/splash/ios/default@2x~iphone~comany.png” />
+		<splash width="1334" height="750" src=”www/splash/ios/default@2x~iphone~comcom.png” />
+		<splash width="2208" height="2208" src=”www/splash/ios/default@3x~iphone~anyany.png” />
+		<splash width="2208" height="1242" src=”www/splash/ios/default@3x~iphone~anycom.png” />
+		<splash width="1242" height="2208" src=”www/splash/ios/default@3x~iphone~comany.png” />
+		<splash width="2732" height="2732" src=”www/splash/ios/default@2x~ipad~anyany.png” />
+		<splash width="1278" height="2732" src=”www/splash/ios/default@2x~ipad~comany.png” />
+		<splash width="2732" height="2732" src=”www/splash/ios/default@2x~universal~anyany.png” />
         <allow-navigation href="*" />
         <allow-intent href="*" />
         <access origin="*" />
@@ -164,10 +173,8 @@
         <param name="CAMERA_USAGE_DESCRIPTION" value="VCNet cần truy cập camera chụp ảnh hoặc quay video khi bạn cần đăng hình ảnh, video lên tường của bạn." />
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="VCNet cần truy cập thư viện ảnh để bạn có thể chọn ảnh  khi bạn cần đăng hình ảnh, video lên tường của bạn." />
     </plugin>
-    <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
-    <plugin name="cordova-plugin-device" spec="^2.0.3" />
     
-    <plugin name="cordova-plugin-media" spec="^5.0.3" />
+    <plugin name="cordova-plugin-device" spec="^2.0.3" />
     
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
     <plugin name="cordova-plugin-contacts" spec="3.0.1" />
@@ -175,4 +182,5 @@
 	<plugin name="cordova-plugin-screen-orientation" spec="3.0.2" />
 	<plugin name="cordova-plugin-x-socialsharing" spec="5.6.2" />
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
+	<plugin name="cordova-plugin-keyboard" spec="1.2.0" />
 </widget>

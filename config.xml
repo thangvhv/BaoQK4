@@ -42,14 +42,14 @@
         <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
         <icon height="1024" platform="ios" src="www/res/icon/ios/icon-1024.png" width="1024" />
         
-        <splash width="2732" height="2732" src="www/res/screen/ios/Default@2x~ipad~anyany.png" />
+        <splash width="2732" height="2732" platform="ios" src="www/res/screen/ios/Default@2x~ipad~anyany.png" />
 		
-        <splash width="2208" height="2208" src="www/res/screen/ios/Default@3x~iphone~anyany.png"/>
+        <splash width="2208" height="2208" platform="ios" src="www/res/screen/ios/Default@3x~iphone~anyany.png"/>
         <splash width="2208" height="1242" platform="ios" src="www/res/screen/ios/Default@3x~iphone~anycom.png"/>
         <splash width="2048" height="1536" platform="ios" src="www/res/screen/ios/Default-Landscape@2x~ipad.png"/>
-		<splash width="1334" height="1334" src="www/res/screen/ios/Default@2x~iphone~anyany.png"/>
-		<splash width="1334" height="750" src="www/res/screen/ios/Default@2x~iphone~comcom.png"/>
-		<splash width="1278" height="2732" src="www/res/screen/ios/Default@2x~ipad~comany.png"/>
+		<splash width="1334" height="1334" platform="ios" src="www/res/screen/ios/Default@2x~iphone~anyany.png"/>
+		<splash width="1334" height="750" platform="ios" src="www/res/screen/ios/Default@2x~iphone~comcom.png"/>
+		<splash width="1278" height="2732" platform="ios" src="www/res/screen/ios/Default@2x~ipad~comany.png"/>
 		<splash width="1242" height="2208" platform="ios" src="www/res/screen/ios/Default@3x~iphone~comany.png"/>
         <splash width="1024" height="768" platform="ios" src="www/res/screen/ios/Default-Landscape~ipad.png"/>
         <splash width="1536" height="2048" platform="ios" src="www/res/screen/ios/Default-Portrait@2x~ipad.png" />

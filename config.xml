@@ -143,8 +143,7 @@
         <feature name="StatusBar">
             <param name="ios-package" onload="true" value="CDVStatusBar" />
         </feature>
-		<plugin name="cordova-plugin-service-worker" spec="1.0.1" />
-		<preference name="ServiceWorker" value="sw.js" />
+		
 	<plugin name="cordova-plugin-iosrtc" spec="6.0.5" />
     </platform>
     <access origin="*" />
@@ -179,5 +178,7 @@
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	
 	<plugin name="cordova-plugin-screen-orientation" spec="3.0.2" />
+	<plugin name="cordova-plugin-crosswalk-webview" spec="2.4.0" />
+	
     <engine name="android" spec="~7.1.4" />
 </widget>

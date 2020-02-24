@@ -143,7 +143,8 @@
         <feature name="StatusBar">
             <param name="ios-package" onload="true" value="CDVStatusBar" />
         </feature>
-		<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" />
+		<plugin name="cordova-plugin-service-worker" spec="1.0.1" />
+		<preference name="ServiceWorker" value="sw.js" />
 	<plugin name="cordova-plugin-iosrtc" spec="6.0.5" />
     </platform>
     <access origin="*" />

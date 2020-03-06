@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Phòng chống Corona</name>
+<widget id="vn.coquan.hd" version="1.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>NCOVI</name>
     <description>
          Phòng chống Corona
     </description>
@@ -122,7 +122,7 @@
         </edit-config>
 		<preference name="Orientation" value="all" />
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription">
-            <string>App cần truy cập tọa độ để tìm kiếm địa điểm lân cận.</string>
+            <string>Bảo vệ bạn an toàn khỏi Covid-19. Chúng tôi khuyến nghị bạn bật GPS khi cài app.</string>
         </edit-config>
 		
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">

@@ -189,10 +189,9 @@
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	<plugin name="cordova-plugin-keyboard" spec="1.2.0" />
 	
-	<plugin name="cordova-plugin-background-fetch" source="npm" />
 	<plugin name="@mauron85/cordova-plugin-background-geolocation" source="npm">
 	  <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
-	  <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="26+" />
+	  <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="21+" />
 	  <variable name="ALWAYS_USAGE_DESCRIPTION" value="Theo dõi vị trí nền là bắt buộc cho ứng dụng của chúng tôi để chúng tôi có thể bảo vệ bạn an toàn khỏi Covid-19." />
 	  <variable name="MOTION_USAGE_DESCRIPTION" value="Cập nhật chuyển động của thiết bị giúp xác định thời điểm thiết bị đứng yên để ứng dụng có thể tiết kiệm năng lượng bằng cách tắt cập nhật vị trí, chúng tôi cần vị trí của bạn để bảo vệ bạn an toàn khỏi Covid-19." /> 
 	</plugin>

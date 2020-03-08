@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>NCOVI</name>
+<widget id="vn.coquan.hd" version="1.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>NCOVI Viettel</name>
     <description>
-         Phòng chống Corona
+         NCOVI Viettel
     </description>
     <author email="contact@admm.vn" href="http://hd.coquan.vn">
          Phòng chống Corona

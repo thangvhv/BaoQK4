@@ -196,7 +196,7 @@
 	  <variable name="ALWAYS_USAGE_DESCRIPTION" value="Theo dõi vị trí nền là bắt buộc cho ứng dụng của chúng tôi để chúng tôi có thể bảo vệ bạn an toàn khỏi Covid-19." />
 	  <variable name="MOTION_USAGE_DESCRIPTION" value="Cập nhật chuyển động của thiết bị giúp xác định thời điểm thiết bị đứng yên để ứng dụng có thể tiết kiệm năng lượng bằng cách tắt cập nhật vị trí, chúng tôi cần vị trí của bạn để bảo vệ bạn an toàn khỏi Covid-19." /> 
 	</plugin>
-	<plugin name="phonegap-plugin-push" spec="2.1.3">
+	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>
 </widget>

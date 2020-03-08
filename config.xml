@@ -189,6 +189,10 @@
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	<plugin name="cordova-plugin-keyboard" spec="1.2.0" />
 	
+	<plugin name="cordova-android-support-gradle-release" spec="3.0.1" />
+	<plugin name="cordova-plugin-androidx" spec="1.0.2" />
+	<plugin name="cordova-plugin-androidx-adapter" spec="1.1.0" />
+	
 	<plugin name="@mauron85/cordova-plugin-background-geolocation" source="npm">
 	  <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="11+" />
 	  <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="21+" />

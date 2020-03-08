@@ -53,7 +53,7 @@
 		</edit-config>
 		<preference name="android-windowSoftInputMode" value="adjustPan" />
         <plugin name="cordova-android-play-services-gradle-release" spec="^4.0.0">
-            <variable name="play-services-location" value="11.6.2" />
+            <variable name="play-services-location" value="17.0.0" />
         </plugin>
     </platform>
    

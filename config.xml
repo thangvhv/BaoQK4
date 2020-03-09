@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>nCoV</name>
+<widget id="vn.coquan.hd" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Vietnam Health Declaration</name>
 	
     <description>
-         nCoV
+         Vietnam Health Declaration
     </description>
     <author email="contact@admm.vn" href="http://hd.coquan.vn">
-         Phòng chống nCoV
+         Vietnam Health Declaration
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />

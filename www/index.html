@@ -22,12 +22,13 @@
 <body>
 <img id="welcome-image" src="img/welcome.png" alt="" width="100%">
 <script type="text/javascript">
-	var oldRegId = localStorage.getItem('registrationId'), platform = "android";
+	var oldRegId = localStorage.getItem('registrationId');
+	var platform = "android";
 	if (navigator.appVersion.indexOf("Mac")!=-1){
 		platform="ios";
 	}
-	location.replace('https://vcnetlocal.coquan.vn/?page=Mobile.home&androidRegistrationId='+(oldRegId?oldRegId:'mobile')+'&platform=' + platform);
-
+	
+	location.replace('https://tokhaiyte.vn/m?page=Mobile.login&androidRegistrationId='+(oldRegId?oldRegId:'mobile')+'&platform=' + platform);
 </script>
 </body>
 

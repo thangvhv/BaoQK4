@@ -1,7 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="vn.coquan.hd" version="1.0.13" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Vietnam Health Declaration</name>
-	
     <description>
          Vietnam Health Declaration
     </description>
@@ -124,13 +123,13 @@
         </edit-config>
 		<preference name="Orientation" value="all" />
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription">
-            <string>Bảo vệ bạn an toàn khỏi Covid-19. Chúng tôi khuyến nghị bạn bật GPS khi cài app.</string>
+            <string>Chúng tôi cần biết bạn ở đâu để đưa ra gợi ý về các cơ sở y tế gần nhất giúp bạn.</string>
         </edit-config>
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationAlwaysAndWhenInUseUsageDescription">
-            <string>Theo dõi vị trí nền là bắt buộc cho ứng dụng của chúng tôi để chúng tôi có thể bảo vệ bạn an toàn khỏi Covid-19.</string>
+            <string>Chúng tôi cần biết bạn ở đâu để đưa ra gợi ý về các cơ sở y tế gần nhất giúp bạn.</string>
         </edit-config>
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationAlwaysUsageDescription">
-            <string>Theo dõi vị trí nền là bắt buộc cho ứng dụng của chúng tôi để chúng tôi có thể bảo vệ bạn an toàn khỏi Covid-19.</string>
+            <string>Chúng tôi cần biết bạn ở đâu để đưa ra gợi ý về các cơ sở y tế gần nhất giúp bạn.</string>
         </edit-config>
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMotionUsageDescription">
             <string>Cập nhật chuyển động của thiết bị giúp xác định thời điểm thiết bị đứng yên để ứng dụng có thể tiết kiệm năng lượng bằng cách tắt cập nhật vị trí, chúng tôi cần vị trí của bạn để bảo vệ bạn an toàn khỏi Covid-19.</string>

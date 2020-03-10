@@ -131,9 +131,7 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationAlwaysUsageDescription">
             <string>Chúng tôi cần biết bạn ở đâu để đưa ra gợi ý về các cơ sở y tế gần nhất giúp bạn.</string>
         </edit-config>
-		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMotionUsageDescription">
-            <string>Cập nhật chuyển động của thiết bị giúp xác định thời điểm thiết bị đứng yên để ứng dụng có thể tiết kiệm năng lượng bằng cách tắt cập nhật vị trí, chúng tôi cần vị trí của bạn để bảo vệ bạn an toàn khỏi Covid-19.</string>
-        </edit-config>
+		
 		
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
             <array>
@@ -190,12 +188,7 @@
 		<variable name="play-services-location" value="17.0.0" />
 	</plugin>
 	
-	<plugin name="@mauron85/cordova-plugin-background-geolocation" source="npm">
-	  <variable name="GOOGLE_PLAY_SERVICES_VERSION" value="17.0.0" />
-	  <variable name="ANDROID_SUPPORT_LIBRARY_VERSION" value="21+" />
-	  <variable name="ALWAYS_USAGE_DESCRIPTION" value="Theo dõi vị trí nền là bắt buộc cho ứng dụng của chúng tôi để chúng tôi có thể bảo vệ bạn an toàn khỏi Covid-19." />
-	  <variable name="MOTION_USAGE_DESCRIPTION" value="Cập nhật chuyển động của thiết bị giúp xác định thời điểm thiết bị đứng yên để ứng dụng có thể tiết kiệm năng lượng bằng cách tắt cập nhật vị trí, chúng tôi cần vị trí của bạn để bảo vệ bạn an toàn khỏi Covid-19." /> 
-	</plugin>
+	
 	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>

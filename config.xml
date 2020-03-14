@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.13" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="vn.coquan.hd" version="1.0.14" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Vietnam Health Declaration</name>
     <description>
          Vietnam Health Declaration
@@ -102,16 +102,16 @@
             <false />
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSPhotoLibraryUsageDescription">
-            <string>App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống.</string>
+            <string>Vietnam Health Declaration cần truy cập thư viện ảnh để bạn có thể chọn ảnh làm ảnh đại diện.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSCameraUsageDescription">
-            <string>App cần truy cập camera chụp ảnh hoặc quay phim để upload.</string>
+            <string>Vietnam Health Declaration cần truy cập camera để đọc mã QRCode khi cần checkin tại điểm đến.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSMicrophoneUsageDescription">
-            <string>App cần truy cập microphone quay phim để upload.</string>
+            <string>Vietnam Health Declaration cần truy cập microphone quay phim để upload.</string>
         </edit-config>
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSContactsUsageDescription">
-            <string>App cần truy cập danh bạ để đề xuất kết bạn.</string>
+            <string>Vietnam Health Declaration cần truy cập danh bạ để đề xuất kết bạn.</string>
         </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations">
             <array>
@@ -172,8 +172,8 @@
     <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
     <plugin name="cordova-plugin-camera" spec="^4.1.0">
-        <param name="CAMERA_USAGE_DESCRIPTION" value="App cần truy cập camera chụp ảnh hoặc quay video để upload khi biên tập bài viết." />
-        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload  khi biên tập bài viết." />
+        <param name="CAMERA_USAGE_DESCRIPTION" value="Vietnam Health Declaration cần truy cập camera để đọc mã QRCode khi cần checkin tại điểm đến." />
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Vietnam Health Declaration cần truy cập thư viện ảnh để bạn có thể chọn ảnh làm ảnh đại diện." />
     </plugin>
     <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.3" />
@@ -187,8 +187,7 @@
 	<plugin name="cordova-android-play-services-gradle-release" spec="4.0.0">
 		<variable name="play-services-location" value="17.0.0" />
 	</plugin>
-	
-	
+	<plugin name="cordova-launch-review" spec="3.1.1" />
 	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>

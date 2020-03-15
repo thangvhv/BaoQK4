@@ -177,5 +177,6 @@
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	<plugin name="cordova-plugin-screen-orientation" spec="3.0.2" />
 	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" />
+	<plugin name="cordova-launch-review" spec="3.1.1" />
     <engine name="android" spec="~7.1.4" />
 </widget>

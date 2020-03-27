@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.14" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Vietnam Health Declaration</name>
+<widget id="vn.tokhaiyte.doctor" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Bacsy24</name>
     <description>
-         Vietnam Health Declaration
+         Bacsy24
     </description>
-    <author email="contact@admm.vn" href="http://hd.coquan.vn">
-         Vietnam Health Declaration
+    <author email="contact@admm.vn" href="http://tokhaiyte.vn">
+         Bacsy24
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />
@@ -172,8 +172,8 @@
     <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
     <plugin name="cordova-plugin-camera" spec="^4.1.0">
-        <param name="CAMERA_USAGE_DESCRIPTION" value="Vietnam Health Declaration cần truy cập camera để đọc mã QRCode khi cần checkin tại điểm đến." />
-        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Vietnam Health Declaration cần truy cập thư viện ảnh để bạn có thể chọn ảnh làm ảnh đại diện." />
+        <param name="CAMERA_USAGE_DESCRIPTION" value="Bacsy24 cần truy cập camera để đọc mã QRCode khi cần checkin tại điểm đến." />
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Bacsy24 cần truy cập thư viện ảnh để bạn có thể chọn ảnh làm ảnh đại diện." />
     </plugin>
     <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.3" />

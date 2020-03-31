@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.14" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Vietnam Health Declaration</name>
+<widget id="vn.tokhaiyte.laos" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Laos Health Declaration</name>
     <description>
-         Vietnam Health Declaration
+         Laos Health Declaration
     </description>
     <author email="contact@admm.vn" href="http://hd.coquan.vn">
-         Vietnam Health Declaration
+         Laos Health Declaration
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.suckhoetoandan.app" version="1.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>Sức khỏe Việt Nam</name>
+<widget id="vn.suckhoevietnam.laos" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Laos Health</name>
     <description>
-        Sức Khỏe Việt Nam
+        Laos Health
     </description>
     <author email="contact@vhv.vn" href="http://suckhoetoandan.vn">
-        Sức Khỏe Việt Nam
+        Laos Health
     </author>
     <content src="index.html" />
     <preference name="phonegap-version" value="cli-8.1.1" />
@@ -133,8 +133,8 @@
     <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
     <plugin name="cordova-plugin-camera" spec="^4.1.0">
-        <param name="CAMERA_USAGE_DESCRIPTION" value="App cần truy cập camera chụp ảnh hoặc quay video để upload khi biên tập bài viết." />
-        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload  khi biên tập bài viết." />
+        <param name="CAMERA_USAGE_DESCRIPTION" value="Laos Health cần truy cập camera chụp ảnh hoặc quay video để upload khi biên tập bài viết." />
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Laos Health cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload  khi biên tập bài viết." />
     </plugin>
     <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.3" />

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.14" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="vn.coquan.hd" version="1.0.15" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Vietnam Health Declaration</name>
     <description>
          Vietnam Health Declaration
@@ -131,7 +131,12 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationAlwaysUsageDescription">
             <string>Chúng tôi cần biết bạn ở đâu để đưa ra gợi ý về các cơ sở y tế gần nhất giúp bạn.</string>
         </edit-config>
-		
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothPeripheralUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothAlwaysUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
 		
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
             <array>
@@ -188,6 +193,7 @@
 		<variable name="play-services-location" value="17.0.0" />
 	</plugin>
 	<plugin name="cordova-launch-review" spec="3.1.1" />
+	<plugin name="cordova-plugin-bluetoothle" spec="4.5.9" />
 	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>

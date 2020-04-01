@@ -22,7 +22,37 @@
 	<preference name="Fullscreen" value="true" /> 
 	<preference name="LoadUrlTimeoutValue" value="60000"/>
 	<preference name="SuppressesLongPressGesture" value="true" />
-   
+   <platform name="android">
+        <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
+        <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
+        <icon density="hdpi" src="www/res/icon/android/drawable-hdpi-icon.png" />
+        <icon density="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon.png" />
+        <icon density="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon.png" />
+        <icon density="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon.png" />
+        <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen.png" />
+        <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen.png" />
+        <splash density="land-hdpi" src="www/res/screen/android/drawable-land-hdpi-screen.png" />
+        <splash density="land-xhdpi" src="www/res/screen/android/drawable-land-xhdpi-screen.png" />
+        <splash density="land-xxhdpi" src="www/res/screen/android/drawable-land-xxhdpi-screen.png" />
+        <splash density="land-xxxhdpi" src="www/res/screen/android/drawable-land-xxxhdpi-screen.png" />
+        <splash density="port-ldpi" src="www/res/screen/android/drawable-port-ldpi-screen.png" />
+        <splash density="port-mdpi" src="www/res/screen/android/drawable-port-mdpi-screen.png" />
+        <splash density="port-hdpi" src="www/res/screen/android/drawable-port-hdpi-screen.png" />
+        <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen.png" />
+        <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
+        <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
+        <resource-file src="google-services.json" target="app/google-services.json" />
+        <resource-file src="google-services.json" target="google-services.json" />
+        <resource-file src="google-services.json" target="/app/google-services.json" />
+        <preference name="AndroidLaunchMode" value="singleTop" />
+        <preference name="android-minSdkVersion" value="21" />
+		<preference name="android-targetSdkVersion" value="28" />
+		<edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+			<application android:usesCleartextTraffic="true" />
+		</edit-config>
+		<preference name="android-windowSoftInputMode" value="adjustPan" />
+        
+    </platform>
     <platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
         <icon height="114" platform="ios" src="www/res/icon/ios/icon@2x.png" width="114" />
@@ -124,17 +154,17 @@
     <allow-intent href="geo:*" />
     <allow-navigation href="*" />
     <allow-intent href="*" />
-
+<engine name="android" spec="^7.1.2" />
     <engine name="ios" spec="~5.0.1" />
      <plugin name="cordova-plugin-statusbar" spec="~2.2.3" />
     <plugin name="cordova-plugin-network-information" spec="2.0.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="~3.1.0" />
-    <plugin name="phonegap-plugin-push" spec="2.1.3" />
+    
     <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
     <plugin name="cordova-plugin-camera" spec="^4.1.0">
-        <param name="CAMERA_USAGE_DESCRIPTION" value="Laos Health cần truy cập camera chụp ảnh hoặc quay video để upload khi biên tập bài viết." />
-        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Laos Health cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload  khi biên tập bài viết." />
+        <param name="CAMERA_USAGE_DESCRIPTION" value="Vietnam Health Declaration cần truy cập camera để đọc mã QRCode khi cần checkin tại điểm đến." />
+        <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Vietnam Health Declaration cần truy cập thư viện ảnh để bạn có thể chọn ảnh làm ảnh đại diện." />
     </plugin>
     <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.3" />
@@ -145,4 +175,13 @@
 	<plugin name="cordova-plugin-x-socialsharing" spec="5.6.2" />
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	<plugin name="cordova-plugin-keyboard" spec="1.2.0" />
+	<plugin name="cordova-android-play-services-gradle-release" spec="4.0.0">
+		<variable name="play-services-location" value="17.0.0" />
+	</plugin>
+	<plugin name="cordova-launch-review" spec="3.1.1" />
+	<plugin name="phonegap-plugin-push" spec="2.3.0">
+		<param name="FCM_VERSION" value="17.5.0" />
+	</plugin>
+	<plugin name="cordova-plugin-bluetoothle" spec="4.5.9" />
+	
 </widget>

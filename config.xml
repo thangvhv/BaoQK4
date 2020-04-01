@@ -138,6 +138,14 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UIViewControllerBasedStatusBarAppearance">
 		  <false/>
 		</edit-config>
+		
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothPeripheralUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothAlwaysUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
+		
         <preference name="Allow3DTouchLinkPreview" value="false" />
 		<preference name="AllowBackForwardNavigationGestures" value="true" />
 		<feature name="StatusBar">

@@ -131,7 +131,12 @@
 		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationAlwaysUsageDescription">
             <string>Chúng tôi cần biết bạn ở đâu để đưa ra gợi ý về các cơ sở y tế gần nhất giúp bạn.</string>
         </edit-config>
-		
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothPeripheralUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothAlwaysUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
 		
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
             <array>
@@ -191,4 +196,5 @@
 	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>
+	<plugin name="cordova-plugin-bluetoothle" spec="4.5.9" />
 </widget>

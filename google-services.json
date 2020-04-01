@@ -37,6 +37,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:d6d45dcb643cae2d80072c",
+        "android_client_info": {
+          "package_name": "la.health.v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:485963672645:android:7a724562fad71474",
         "android_client_info": {
           "package_name": "vn.suckhoetoandan"
@@ -95,6 +124,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:893b00b32bf4c7b880072c",
+        "android_client_info": {
+          "package_name": "vn.suckhoetoandan.quangninh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:485963672645:android:7b77ccb8f9ab244780072c",
         "android_client_info": {
           "package_name": "vn.suckhoetoandan.v2"
@@ -124,9 +182,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:485963672645:android:60de6e589413856680072c",
+        "mobilesdk_app_id": "1:485963672645:android:572316d4549acabe80072c",
         "android_client_info": {
-          "package_name": "vn.suckhoevietnam.laos"
+          "package_name": "vn.tokhaiyte.doctor"
         }
       },
       "oauth_client": [
@@ -153,9 +211,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:485963672645:android:572316d4549acabe80072c",
+        "mobilesdk_app_id": "1:485963672645:android:ee53b50cd082c99f80072c",
         "android_client_info": {
-          "package_name": "vn.tokhaiyte.doctor"
+          "package_name": "vn.tokhaiyte.quangninh"
         }
       },
       "oauth_client": [

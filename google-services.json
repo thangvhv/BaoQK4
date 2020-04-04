@@ -37,6 +37,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:851d79b0eb693f6a80072c",
+        "android_client_info": {
+          "package_name": "kh.health.v1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:485963672645:android:2fc3ad41355dc7e680072c",
         "android_client_info": {
           "package_name": "la.health.v2"

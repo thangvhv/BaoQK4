@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "239167227311",
-    "firebase_url": "https://vhv-office.firebaseio.com",
-    "project_id": "vhv-office",
-    "storage_bucket": "vhv-office.appspot.com"
+    "project_number": "485963672645",
+    "firebase_url": "https://suckhoetoandan-5f3e7.firebaseio.com",
+    "project_id": "suckhoetoandan-5f3e7",
+    "storage_bucket": "suckhoetoandan-5f3e7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:cb05d6a5e34045dde1db5a",
+        "mobilesdk_app_id": "1:485963672645:android:da79c9a5cd0c2edb80072c",
         "android_client_info": {
-          "package_name": "vn.coquan.hd"
+          "package_name": "com.suckhoevietnam"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -37,27 +37,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:b34c78589272d6bbe1db5a",
+        "mobilesdk_app_id": "1:485963672645:android:3f79b59f51f9cdf880072c",
         "android_client_info": {
-          "package_name": "vn.coquan.httt.yte"
+          "package_name": "fr.health.v1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -66,27 +66,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:783e15bdd8168571e1db5a",
+        "mobilesdk_app_id": "1:485963672645:android:851d79b0eb693f6a80072c",
         "android_client_info": {
-          "package_name": "vn.coquan.viettelsports"
+          "package_name": "kh.health.v1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -95,27 +95,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:4c1c69be8e423bafe1db5a",
+        "mobilesdk_app_id": "1:485963672645:android:eaab1753d344e6fc80072c",
         "android_client_info": {
-          "package_name": "vn.gov.chonhaminh.v1"
+          "package_name": "kh.healthdecl.v1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -124,27 +124,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:9e3af096d5a5a2a2",
+        "mobilesdk_app_id": "1:485963672645:android:2fc3ad41355dc7e680072c",
         "android_client_info": {
-          "package_name": "vn.vhv.app.office"
+          "package_name": "la.health.v2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -153,27 +153,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:7fbc44561e8a1413",
+        "mobilesdk_app_id": "1:485963672645:android:4afdb68daf1d110680072c",
         "android_client_info": {
-          "package_name": "vn.vhv.survey"
+          "package_name": "la.healthdecl.v2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -182,27 +182,172 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:239167227311:android:960ed89964f6e83ee1db5a",
+        "mobilesdk_app_id": "1:485963672645:android:7a724562fad71474",
         "android_client_info": {
-          "package_name": "vn.vhv.survey.bhxh"
+          "package_name": "vn.suckhoetoandan"
         }
       },
       "oauth_client": [
         {
-          "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAtvT4OzS8xWdc0qhAMTHlHxRp1TK3FZxs"
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "239167227311-glru826stkfd4ush56dov6rscrudn3pi.apps.googleusercontent.com",
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:524c1176591b23a980072c",
+        "android_client_info": {
+          "package_name": "vn.suckhoetoandan.hue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:893b00b32bf4c7b880072c",
+        "android_client_info": {
+          "package_name": "vn.suckhoetoandan.quangninh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:7b77ccb8f9ab244780072c",
+        "android_client_info": {
+          "package_name": "vn.suckhoetoandan.v2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:572316d4549acabe80072c",
+        "android_client_info": {
+          "package_name": "vn.tokhaiyte.doctor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:485963672645:android:ee53b50cd082c99f80072c",
+        "android_client_info": {
+          "package_name": "vn.tokhaiyte.quangninh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDMviPUrOsQlp8VHPWKes4v66LVn-SU_vg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "485963672645-moh40a3h4dnp55pm9tqgh05co3kso0b1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

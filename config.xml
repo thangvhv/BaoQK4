@@ -123,6 +123,12 @@
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSLocationWhenInUseUsageDescription">
             <string>App cần truy cập tọa độ để tìm kiếm địa điểm lân cận.</string>
         </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothPeripheralUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
+		<edit-config file="*-Info.plist" mode="merge" overwrite="true" target="NSBluetoothAlwaysUsageDescription">
+            <string>Chúng tôi cần truy cập bluetooth để tracking những người xung quanh bạn có khả năng đang bị cách ly vì Covid-19 để đưa ra cảnh báo cho bạn.</string>
+        </edit-config>
         <edit-config file="*-Info.plist" mode="merge" overwrite="true" target="UISupportedInterfaceOrientations~ipad">
             <array>
                 <string>UIInterfaceOrientationPortrait</string>
@@ -179,4 +185,5 @@
 	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" />
 	<plugin name="cordova-launch-review" spec="3.1.1" />
     <engine name="android" spec="~7.1.4" />
+	<plugin name="cordova-plugin-bluetoothle" spec="4.5.9" />
 </widget>

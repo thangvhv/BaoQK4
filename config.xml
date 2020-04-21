@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.app.viettelstudy" version="1.0.37" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.vhv.app.viettelstudy" version="1.0.38" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>ViettelStudy</name>
     <description>
         ViettelStudy

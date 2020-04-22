@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.coquan.hd" version="1.0.16" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<widget id="vn.coquan.hd" version="1.0.17" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Vietnam Health Declaration</name>
     <description>
          Vietnam Health Declaration
@@ -194,6 +194,7 @@
 	</plugin>
 	<plugin name="cordova-launch-review" spec="3.1.1" />
 	<plugin name="cordova-plugin-bluetoothle" spec="4.5.9" />
+	<plugin name="cordova-plugin-bluetooth-serial" spec="0.4.7" />
 	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>

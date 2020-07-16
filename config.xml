@@ -183,17 +183,12 @@
     <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.3" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
-    <plugin name="cordova-plugin-contacts" spec="3.0.1" />
-	<plugin name="phonegap-plugin-barcodescanner" spec="8.1.0" />
+    <plugin name="cordova-plugin-contacts" spec="3.0.1" />	
 	<plugin name="cordova-plugin-screen-orientation" spec="3.0.2" />
 	<plugin name="cordova-plugin-x-socialsharing" spec="5.6.2" />
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	<plugin name="cordova-plugin-keyboard" spec="1.2.0" />
-	<plugin name="cordova-android-play-services-gradle-release" spec="4.0.0">
-		<variable name="play-services-location" value="17.0.0" />
-	</plugin>
-	<plugin name="cordova-launch-review" spec="3.1.1" />
-	<plugin name="cordova-plugin-bluetoothle" spec="4.5.9" />
+	
 	<plugin name="phonegap-plugin-push" spec="2.3.0">
 		<param name="FCM_VERSION" value="17.5.0" />
 	</plugin>

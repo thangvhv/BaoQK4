@@ -8,35 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1012297368941:android:a7de673da458615aba0664",
-        "android_client_info": {
-          "package_name": "vn.com.npc.kpi"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1012297368941-kfkvt67f6vnrghuku3bqngrvitd9k5t5.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCrE-CtWLKKUwCsN5WrwyzeargnXq96sfE"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1012297368941-kfkvt67f6vnrghuku3bqngrvitd9k5t5.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:1012297368941:android:ade2f9835c00c108",
         "android_client_info": {
           "package_name": "vn.vhv.evnnpc.kpi"

@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1012297368941:android:0dc6024c0cb7353d",
+        "mobilesdk_app_id": "1:1012297368941:android:a7de673da458615aba0664",
         "android_client_info": {
-          "package_name": "vn.vhv.evn"
+          "package_name": "vn.com.npc.kpi"
         }
       },
       "oauth_client": [

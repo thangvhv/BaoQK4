@@ -1,0 +1,8 @@
+{
+  "iosDistP12": "certificates/ios_distribution.p12",
+  "iosDistP12Password": "Unitel@2020",
+  "iosDistribution": "certificates/distribution.mobileprovision",
+  "iosPackageType": "app-store",
+  "platform": "ios",
+  "release": "release"
+}

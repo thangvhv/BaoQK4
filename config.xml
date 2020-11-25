@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.vhv.evnnpc.kpi" version="1.0.11" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="vn.vhv.evnnpc.kpi" version="1.0.12" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>EVNNPC KPI</name>
     <description>
         EVNNPC KPI
@@ -167,6 +167,9 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~3.1.0" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
+    <plugin name="cordova-plugin-file" spec="^6.0.2" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
+    
     <plugin name="cordova-plugin-camera" spec="^4.1.0">
         <param name="CAMERA_USAGE_DESCRIPTION" value="EVNNPC cần truy cập camera để đọc mã QRCode khi cần checkin tại điểm đến." />
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="EVNNPC cần truy cập thư viện ảnh để bạn có thể chọn ảnh làm ảnh đại diện." />

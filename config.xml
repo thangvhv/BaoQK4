@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="vn.gov.chonhaminh.v1" version="1.0.9" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
+<widget id="vn.gov.chonhaminh.v1" version="1.0.10" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" xmlns:android="http://schemas.android.com/apk/res/android" >
     <name>Chợ nhà mình</name>
     <description>
         Chợ nhà mình
@@ -136,6 +136,8 @@
     <plugin name="phonegap-plugin-push" spec="2.1.3" />
     <plugin name="cordova-plugin-dialogs" spec="^2.0.2" />
     <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
+    <plugin name="cordova-plugin-file" spec="^6.0.2" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-camera" spec="^4.1.0">
         <param name="CAMERA_USAGE_DESCRIPTION" value="VCNet cần truy cập camera chụp ảnh hoặc quay video để upload." />
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="VCNet cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload lên hệ thống." />

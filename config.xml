@@ -182,4 +182,6 @@
     <plugin name="phonegap-plugin-push" spec="2.3.0">
         <param name="FCM_VERSION" value="17.5.0" />
     </plugin>
+    <plugin name="cordova-plugin-app-exit" spec="0.0.2" />
+    
 </widget>

@@ -201,5 +201,5 @@
     <plugin name="phonegap-plugin-push" spec="2.3.0">
         <param name="FCM_VERSION" value="17.5.0" />
     </plugin>
-    <plugin name="cordova-plugin-cleartext" spec="1.0.0" />
+    <plugin name="cordova-plugin-enable-cleartext-traffic" spec="2.1.0" />
 </widget>

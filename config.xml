@@ -151,7 +151,7 @@
         <feature name="StatusBar">
             <param name="ios-package" onload="true" value="CDVStatusBar" />
         </feature>
-    </platform>Orientation
+    </platform>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

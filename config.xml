@@ -11,11 +11,11 @@
     <preference name="phonegap-version" value="cli-8.1.1" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="21" />
-	<preference name="android-targetSdkVersion" value="28" />
+	<preference name="android-targetSdkVersion" value="29" />
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarStyle" value="default" />
 	<preference name="StatusBarBackgroundColor" value="#FFFFFF" />
-    <preference name="orientation" value="portrait" />
+    <preference name="orientation" value="user" />
     <preference name="show-splash-screen-spinner" value="false" />
     <preference name="ShowSplashScreenSpinner" value="false" />
 	<preference name="AutoHideSplashScreen" value="true" />
@@ -80,6 +80,8 @@
         <param name="CAMERA_USAGE_DESCRIPTION" value="App cần truy cập camera chụp ảnh hoặc quay video để upload khi biên tập bài viết." />
         <param name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="App cần truy cập thư viện ảnh để bạn có thể chọn ảnh upload  khi biên tập bài viết." />
     </plugin>
+    <plugin name="cordova-plugin-file" spec="^6.0.2" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.7.1" />
     <plugin name="cordova-plugin-media-capture" spec="^3.0.3" />
     <plugin name="cordova-plugin-device" spec="^2.0.3" />
     <plugin name="cordova-plugin-geolocation" spec="^4.0.2" />
@@ -89,4 +91,5 @@
 	<plugin name="cordova-plugin-x-socialsharing" spec="5.6.2" />
 	<plugin name="cordova-plugin-x-toast" spec="2.7.2" />
 	<plugin name="cordova-plugin-keyboard" spec="1.2.0" />
+    <plugin name="cordova-plugin-app-exit" spec="0.0.2" />
 </widget>
